@@ -1,0 +1,93 @@
+---
+import "../styles/normalize.scss";
+import "../styles/global.scss";
+
+import Button from "../components/Buttons.astro";
+import Avatar from "../components/Avatar.astro";
+import Linkedin from "../components/Linkedin.astro";
+import RedesSociais from "../components/RedesSociais.astro";
+---
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro</title>
+    <link rel="preconnect" href="https://randomuser.me" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <RedesSociais />
+    </header>
+    <div class="global-content">
+      <content>
+        <aside>
+          <Avatar />
+          <Linkedin />
+        </aside>
+        <main class="l-base-layout">
+          <slot />
+        </main>
+      </content>
+    </div>
+    <footer>
+      <img src="/banner-footer.png" alt="Banner do footer" />
+    </footer>
+  </body>
+</html>
+
+<style lang="scss">
+  .global-content {
+    max-width: 1440px;
+    margin: 30px auto;
+  }
+  header {
+
+  }
+  content {
+    display: flex;
+    flex-direction: row;
+  }
+  aside {
+    width: 30%;
+    height: 100%;
+    padding: 30px 16px;
+    display: flex;
+    flex-direction: column!important;
+    gap: 16px!important;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .l-base-layout {
+    width: 100%;
+    height: 100%;
+    padding: 30px 16px;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+     img {
+      height: 200px;
+      width: auto;
+      margin-right: 2px;
+      float: right;
+    }
+  }
+</style>
