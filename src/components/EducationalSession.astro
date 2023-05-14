@@ -1,0 +1,56 @@
+---
+const { id } = Astro.props;
+const { src } = Astro.props;
+const { title } = Astro.props;
+const { description } = Astro.props;
+---
+
+<div class="educational-session">
+  <div class="container-educational">
+    <div class="imageeducational">
+      <img src={src} alt={title} width="100" height="60" />
+    </div>
+    <div class="texteducational">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  .educational-session {
+    margin-top: 2%;
+  }
+
+  .container-educational {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  .container-educational img {
+    height: 80;
+    width: auto;
+    border-radius: 4px;
+  }
+
+  .imageeducational {
+    width: 8%;
+    height: auto;
+    text-align: right;
+  }
+
+  .texteducational {
+    width: 70%;
+    height: auto;
+    color: #333333;
+    margin: 16px 0;
+    .p {
+      font-size: 16px;
+    }
+  }
+</style>

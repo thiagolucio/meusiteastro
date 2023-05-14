@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 html {
     box-sizing: border-box;
   }
@@ -10,17 +12,19 @@ html {
 
   body {
     background-color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Libre Barcode 39 Text', cursive;
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Oswald', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #0a66c2!important;
+    font-weight: 500;
   }
 
   .texto-global {
     font-size: 30px;
     display:flex;
     width: 100vh;
-    background-color: aqua;
   }
 
 .container-horizontal {
@@ -37,6 +41,23 @@ html {
     flex-direction: column;
     margin: 0;
     padding: 0;
+}
+
+.btn-linkedin {
+    width: 100%;
+    border-radius: 14px;
+    margin: 30px 16px;
+    font-weight: 700;
+    color:#0a66c2;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.btn-linkedin img {
+    filter: invert(21%) sepia(97%) saturate(2062%) hue-rotate(198deg) brightness(100%) contrast(92%);
+    margin-right: 6px;
+
 }
 
 /* animação rotacional em escala */

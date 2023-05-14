@@ -6,6 +6,7 @@ import Button from "../components/Buttons.astro";
 import Avatar from "../components/Avatar.astro";
 import Linkedin from "../components/Linkedin.astro";
 import RedesSociais from "../components/RedesSociais.astro";
+import Logo from "../components/Logo.astro"
 ---
 
 <html lang="pt-br">
@@ -13,9 +14,6 @@ import RedesSociais from "../components/RedesSociais.astro";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Astro</title>
-    <link rel="preconnect" href="https://randomuser.me" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
       rel="stylesheet"
@@ -28,23 +26,24 @@ import RedesSociais from "../components/RedesSociais.astro";
     ></script>
   </head>
   <body>
-    <header>
-      <RedesSociais />
-    </header>
     <div class="global-content">
+      <header>
+        <RedesSociais />
+      </header>
       <content>
         <div class="aside">
           <Avatar />
+          <Logo />
           <Linkedin />
         </div>
         <main class="l-base-layout">
           <slot />
         </main>
       </content>
+      <footer>
+        <img src="/banner-footer.png" alt="Banner do footer" />
+      </footer>
     </div>
-    <footer>
-      <img src="/banner-footer.png" alt="Banner do footer" />
-    </footer>
   </body>
 </html>
 
@@ -59,10 +58,11 @@ import RedesSociais from "../components/RedesSociais.astro";
   content {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     height: 100%;
   }
   .aside {
+    width: 30%;
     width: 30%;
     height: 100%;
     padding: 30px 16px;
@@ -72,7 +72,6 @@ import RedesSociais from "../components/RedesSociais.astro";
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: #ededed;
   }
   .l-base-layout {
     width: 100%;

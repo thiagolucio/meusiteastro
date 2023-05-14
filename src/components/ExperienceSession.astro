@@ -1,0 +1,56 @@
+---
+const { id } = Astro.props;
+const { src } = Astro.props;
+const { title } = Astro.props;
+const { description } = Astro.props;
+---
+
+<div class="experience-session">
+  <div class="container-experience">
+    <div class="imageExperience">
+      <img src={src} alt={title} width="100" height="60" />
+    </div>
+    <div class="textExperience">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  .experience-session {
+    margin-top: 2%;
+  }
+
+  .container-experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  .container-experience img {
+    height: 80;
+    width: auto;
+    border-radius: 4px;
+  }
+
+  .imageExperience {
+    width: 8%;
+    height: auto;
+    text-align: right;
+  }
+
+  .textExperience {
+    width: 70%;
+    height: auto;
+    color: #333333;
+    margin: 16px 0;
+    .p {
+      font-size: 16px;
+    }
+  }
+</style>

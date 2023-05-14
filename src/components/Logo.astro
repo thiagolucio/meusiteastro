@@ -1,0 +1,40 @@
+---
+---
+
+<div class="containerLogo">
+  <img src="/logo.png" alt="Logo" width="40" height="40" />
+  <span class="font-bar-code">ThiagoLucio</span>
+</div>
+
+<style lang="scss">
+  .containerLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .font-bar-code {
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-size: 2.5em;
+    margin-left: 8px;
+    color: #222222;
+    font-weight: 400;
+  }
+
+  @media (max-width: 1024px) {
+    .containerLogo {
+      flex-direction: column;
+    }
+
+    .font-bar-code {
+      font-family: "Libre Barcode 39 Text", cursive;
+      font-size: 1.2em;
+      margin-top: 8px;
+      color: #222222;
+      font-weight: 300;
+    }
+  }
+</style>
