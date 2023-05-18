@@ -41,15 +41,13 @@
 
 <style lang="scss">
   .container-sociais {
-    width: 100%;
-    height: 80px;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     gap: 16px;
-    align-items: center;
-    justify-content: flex-end;
   }
 
   .iconRedesSociais {
@@ -68,5 +66,12 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 615px) {
+    .container-sociais {
+      width: 100%;
+      justify-content: center;
+    }
   }
 </style>

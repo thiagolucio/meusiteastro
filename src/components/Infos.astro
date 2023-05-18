@@ -16,6 +16,15 @@
       <span class="spanTitle">country:</span>
       <span class="spanText">Brasil</span>
     </li>
+    <li class="link-simple-linkedin">
+      <span class="spanTitle">Linkedin:</span>
+      <span class="spanText">
+        <a
+          href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
+          target="_blank">Thiago Lucio</a
+        >
+      </span>
+    </li>
   </ul>
 </div>
 
@@ -26,11 +35,12 @@
     h2 {
       margin-bottom: 16px;
     }
-  }
-  .infolist ul li {
-    text-align: left;
-    list-style: none;
-    padding: 4px 0;
+    ul {
+      width: 100%;
+      text-align: left;
+      list-style: none;
+      padding: 4px 0;
+    }
   }
   .spanTitle {
     font-family: "Oswald", sans-serif;
@@ -41,5 +51,25 @@
     font-family: "Oswald", sans-serif;
     margin-left: 8px;
     color: #333333;
+  }
+  .link-simple-linkedin {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    .link-simple-linkedin {
+      display: block;
+    }
+    .infolist h2 {
+      display: none;
+    }
+  }
+  @media (max-width: 615px) {
+    .infolist {
+      ul li {
+        text-align: center;
+        list-style: none;
+        padding: 4px 0;
+      }
+    }
   }
 </style>

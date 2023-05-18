@@ -13,7 +13,7 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin-top: 20px;
+    padding: 0 20px;
   }
 
   .font-bar-code {
@@ -26,15 +26,21 @@
 
   @media (max-width: 1024px) {
     .containerLogo {
-      flex-direction: column;
+      width: 50%;
+      justify-content: flex-start;
     }
 
     .font-bar-code {
       font-family: "Libre Barcode 39 Text", cursive;
-      font-size: 1.2em;
-      margin-top: 8px;
+      font-size: 42px;
       color: #222222;
       font-weight: 300;
+    }
+  }
+  @media (max-width: 615px) {
+    .containerLogo {
+      width: 100%;
+      justify-content: center;
     }
   }
 </style>

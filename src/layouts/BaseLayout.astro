@@ -29,13 +29,13 @@ import Infos from "../components/Infos.astro";
   <body>
     <div class="global-content">
       <header>
+        <Logo />
         <RedesSociais />
       </header>
       <content>
         <div class="aside">
           <Avatar />
-          <Logo />
-          <Linkedin />
+          <div class="linkedin"><Linkedin /></div>
           <Infos />
         </div>
         <main class="l-base-layout">
@@ -50,12 +50,18 @@ import Infos from "../components/Infos.astro";
 </html>
 
 <style lang="scss">
+  header {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
   .global-content {
     max-width: 1440px;
     margin: 30px auto;
   }
-  header {
-
+  .l-base-layout {
   }
   content {
     display: flex;
@@ -69,8 +75,8 @@ import Infos from "../components/Infos.astro";
     height: 100%;
     padding: 30px 16px;
     display: flex;
-    flex-direction: column!important;
-    gap: 16px!important;
+    flex-direction: column;
+    gap: 16px;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -80,18 +86,49 @@ import Infos from "../components/Infos.astro";
     height: 100%;
     padding: 30px 16px;
   }
-
   footer {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: flex-end;
-     img {
+    img {
       height: 200px;
       width: auto;
       margin-right: 2px;
       float: right;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    content {
+      flex-direction: column;
+    }
+    .aside {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 30px;
+    }
+    .content-info {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .linkedin {
+      display: none;
+    }
+  }
+  @media (max-width: 615px) {
+    header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      gap: 16px;
     }
   }
 </style>
