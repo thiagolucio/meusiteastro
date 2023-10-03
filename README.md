@@ -1,9 +1,6 @@
-# Tailcast
+# Thiago Lucio Personal WebSite in AstroJS
 
-Dark themed website template built on AstroJS, designed for technological startup business.
-
-## Tech stack:
-
+## Tech stack: 
 Astro, React, Tailwind, Framer Motion
 
 ## Live link
