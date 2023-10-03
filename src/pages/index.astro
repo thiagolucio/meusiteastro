@@ -1,108 +1,33 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Button from "../components/Buttons.astro";
-import ExperienceSession from "../components/ExperienceSession.astro";
-import EducationalSession from "../components/EducationalSession.astro";
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "../components/Hero.jsx";
+import { Navbar } from "../components/Navbar.jsx";
+import { Features1 } from "../components/Features1.jsx";
+import { Features2 } from "../components/Features2.jsx";
+import { Testimonials } from "../components/Testimonials.jsx";
+import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx";
+import { Pricing } from "../components/Pricing.jsx";
+import { FAQ } from "../components/FAQ.jsx";
+import { Brands } from "../components/Brands.jsx";
+import { Divider } from "../components/Divider";
+import { Footer } from "../components/Footer.jsx";
+import { ScrollUpButton } from "../components/ScrollUpButton";
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
+
 ---
 
-<BaseLayout>
-  <div class="cv-buttons">
-    <Button
-      icon="/icon-download.svg"
-      text="Download English CV"
-      url="https://thiagolucio.com.br/cv/cv-midia-en-thiagolucio.pdf"
-    />
-    <Button
-      icon="/icon-download.svg"
-      text="Download CV em Português"
-      url="https://thiagolucio.com.br/cv/cv-midia-br-thiagolucio.pdf"
-    />
-  </div>
-  <div class="content-container">
-      <h1>Experience (last three)</h1>
-      <ExperienceSession
-        src="/logoSysmap.png"
-        title="SysMap Outsource - May 2022 - Present - Remote"
-        description="Working as a Co-Participating Partner inside the company's clients teams and projects as a Front-end UI Developer. \n Acting mainly in the creation of Design Systems for Mobile Applications using frameworks and tools for the Front-end ecosystem."
-      />
-      <ExperienceSession
-        src="/logoAtos.jpeg"
-        title="Atos - Jul 2021 - May 2022"
-        description="Using technologies based on JavaScript, HTML, and CSS and implementing UX Design / Interaction UI concepts in the intuitive construction of interfaces."
-      />
-      <ExperienceSession
-        src="/logonsctv.jpeg"
-        title="NSC TV (Globo TV network branch) - Mar 2020 - Jul 2021"
-        description="Working with Web Development of the company's Web Applications, dealing with the entire cycle of UX/ UI Design and construction of the Front-end as well as APIS and Backend."
-      />
-      <a
-        class="btn-linkedin"
-        href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825"
-        target="_blank"
-      >
-        <img src="/link-icon.svg" alt="Linkedin" width="16" height="16" /> See more on
-        Linkedin...
-      </a>
-    
-      <h1>Education</h1>
-      <EducationalSession
-        src="/univali-logo.jpg"
-        title="University of Vale do Itajaí - UNIVALI."
-        description="Graduate in Interaction Design - 2016 - 2018."
-      />
-      <EducationalSession
-        src="/unisul-logo.jpeg"
-        title="University of Southern Santa Catarina - UNISUL."
-        description="Bachelor of Web Development - 2009 - 2013."
-      />
-      <EducationalSession
-        src="/unesa-logo.jpg"
-        title="Estácio de Sá University - UNESA."
-        description="Bachelor of Systems Analysis - 1998 - 2002."
-      />
-    
-      <a
-        class="btn-linkedin"
-        href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825"
-        target="_blank"
-      >
-        <img src="/link-icon.svg" alt="Linkedin" width="16" height="16" /> See more on
-        Linkedin...
-      </a>
-  </div>
-</BaseLayout>
-
-<style lang="scss">
-  .cv-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 40px;
-  }
-  @media (max-width: 1024px) {
-    .cv-buttons {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  }  
-  @media (max-width: 615px) {
-    .content-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .cv-buttons {
-      flex-direction: column;
-      align-items: center;
-    }
-    .btn-linkedin {
-      justify-content: center;
-    }
-  }
-</style>
+<Layout title="ThiagoL Lucio">
+  <Navbar client:load />
+  <Hero client:load />
+  <Features1 client:load />
+  <Divider />
+  <Features2 client:load />
+  <Testimonials client:load />
+  <FeaturesDiagonal client:load />
+  <Pricing client:load />
+  <Brands client:load />
+  <FAQ client:load />
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
