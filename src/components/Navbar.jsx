@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
+import Logo from "../assets/logos/logo.png";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-  { label: "Home", href: "#home", ariaLabel: "Home" },
-  { label: "Features", href: "#features", ariaLabel: "Features" },
-  { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
+  { label: "Start", href: "#home", ariaLabel: "Start" },
+  { label: "ProFit", href: "#features", ariaLabel: "ProFit" },
+  // { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
   { label: "Feedback", href: "#feedback", ariaLabel: "Feedback" },
   { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
 ];
@@ -26,11 +26,11 @@ export const Navbar = () => {
         >
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white mr-2 text-6xl">
-                {/* <TailcastLogo /> */}
+              <div className="mr-2">
+                <img src={Logo} width='48' height="56" />
               </div>
               <div className="text-white font-['Inter'] text-xl">
-                Thiago Lúcio Bittencourt
+                Thiago Lúcio
               </div>
             </div>
           </a>
@@ -64,22 +64,17 @@ export const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
               target="_blank"
-            >
-              <span class="fa-stack">
-                <i class="fa-solid fa-circle fa-stack-2x text-customPrimary"></i>
-                <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-              <a
-                className="text-white"
-                href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
-                target="_blank"
+              className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer bg-customPrimary hover:bg-customDarkBg2 border-customPrimary transition"
               >
-                <span class="fa-stack">
-                  <i class="fa-solid fa-circle fa-stack-2x text-customPrimary"></i>
-                  <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
+                <i class="fa-brands fa-linkedin fa-lg"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
+              target="_blank"
+              className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customPrimary hover:bg-customDarkBg2 border-customPrimary transition"
+            >
+              <i class="fa-brands fa-github fa-lg"></i>
+            </a>
           </div>
         </motion.div>
         <div

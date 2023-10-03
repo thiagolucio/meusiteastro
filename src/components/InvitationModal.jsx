@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import { CloseIcon } from "../assets/icons/CloseIcon";
 
-export const InvitationModal = ({ setIsOpen }) => (
+export const InvitationModal = ({ setIsOpen, isCvEnd }) => (
   <AnimatePresence>
     <motion.div
       initial={{ opacity: 0, zIndex: 50 }}
@@ -16,37 +16,62 @@ export const InvitationModal = ({ setIsOpen }) => (
         onClick={() => setIsOpen(false)}
       >
         <div
-          className="w-full h-screen sm:h-auto sm:w-3/4 md:w-3/5 lg:w-[1000px] xl:w-[1100px] sm:rounded-2xl bg-customDarkBgTransparentLighter custom-border-gray-darker py-12 px-8 sm:px-16 backdrop-blur-xl fixed sm:mb-8 fixed mx-auto z-50"
+          className="w-full h-screen sm:h-auto sm:w-3/4 md:w-3/5 lg:w-[1000px] xl:w-[1100px] sm:rounded-2xl bg-customDarkBgTransparentLighter custom-border-gray-darker py-12 px-8 sm:px-16 backdrop-blur-xl sm:mb-8 fixed mx-auto z-50"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex relative">
-            <div className="w-1/2 hidden lg:inline">
+            { isCvEnd ? (
+              <div className="w-1/2 hidden lg:inline">
+                <h2 className="mt-6 mb-2 text-5xl font-bold tracking-normal text-white">
+                Professional
+                </h2>
+                <h2 className="text-5xl font-bold tracking-normal text-customSecondary">
+                  Network Links
+                </h2>
+                <ul className="mb-6 text-white mt-12">
+                  <li className="mb-4 flex text-sky-400">
+                    <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                    <span class="underline underline-offset-4">Technical certificates on google drive <small class="text-customSecondary font-bold">(need request access)</small></span>
+                  </li>
+                  <li className="mb-4 flex hover:ring-indigo-300 text-sky-400">
+                    <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                    <a href="https://www.behance.net/thiagolucio" target="_blank" rel="noreferrer" class="underline underline-offset-4"><span>Old portfolio on Behance</span></a>
+                  </li>
+                  <li className="mb-4 flex text-sky-400">
+                    <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>     
+                    <a href="https://github.com/thiagolucio" target="_blank" rel="noreferrer" class="underline underline-offset-4"><span>Projects on github</span></a>
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              <div className="w-1/2 hidden lg:inline">
               <h2 className="mt-6 mb-2 text-5xl font-bold tracking-normal text-white">
-              Professional
+              Redes
               </h2>
               <h2 className="text-5xl font-bold tracking-normal text-customSecondary">
-                Network Links
+                 Profissionais
               </h2>
               <ul className="mb-6 text-white mt-12">
-                <li className="mb-4 flex">
-                  <CheckArrowIcon />
-                  <span>Technical certificates on google drive <small class="text-customSecondary font-bold">(need request access)</small></span>
+                <li className="mb-4 flex text-sky-400">
+                  <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                  <span class="underline underline-offset-4">Certificados técnicos no Google Drive<small class="text-customSecondary font-bold"> (solicite acesso)</small></span>
                 </li>
-                <li className="mb-4 flex hover:ring-indigo-300">
-                  <CheckArrowIcon />                  
-                  <a href="https://www.behance.net/thiagolucio" target="_blank" rel="noreferrer"><span>Old portfolio on Behance</span></a>
+                <li className="mb-4 flex hover:ring-indigo-300 text-sky-400">
+                  <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                  <a href="https://www.behance.net/thiagolucio" target="_blank" rel="noreferrer" class="underline underline-offset-4"><span>Portifólio antigo no Behance</span></a>
                 </li>
-                <li className="mb-4 flex">
-                  <CheckArrowIcon />                  
-                  <a href="https://github.com/thiagolucio" target="_blank" rel="noreferrer"><span>Personal projects on github</span></a>
+                <li className="mb-4 flex text-sky-400">
+                  <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                  <a href="https://github.com/thiagolucio" target="_blank" rel="noreferrer" class="underline underline-offset-4"><span>Projetos no Github</span></a>
                 </li>
               </ul>
             </div>
+            )}
             <div className="w-full lg:w-1/2 flex items-center flex-col justify-center pt-24 sm:pt-0">
               <h3 className="mb-7 text-2xl text-white font-bold leading-snug text-center">
-                CV Download's
+                Curriculum Vitae
               </h3>
-              { InvitationModal.isCvEnd ? (
+              { isCvEnd ? (
                 <div className="flex flex-wrap -m-2">
                   <div className="w-full sm:w-4/5 p-2 mx-auto">
                   <a
