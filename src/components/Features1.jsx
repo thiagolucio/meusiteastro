@@ -23,23 +23,27 @@ export const Features1 = () => {
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="custom-block-subtitle">Professional Fit</span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-                All Frontend Cicle
+                Todo ciclo do Frontend
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Working across the entire Frontend cycle mat from UX/UI analysis and interaction creation, prototyping, coding and implementation of web or mobile projects.
+                Trabalhando por toda a esteira do ciclo de Frontend. Trabalhando desde a análise do processo de interação com o usuário, criando protótipos, codificando e implementando projetos web ou mobile.
+                {/* Working across the entire Frontend cycle mat from UX/UI analysis and interaction creation, prototyping, coding and implementation of web or mobile projects. */}
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>UX and UI and Interaction Design</span>
+                  <span>Design de Interação usando UX/ UI</span>
+                  {/* <span>UX and UI and Interaction Design</span> */}
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Prototyping and Wireframing</span>
+                  <span>Prototipando Sessionando</span>
+                  {/* <span>Prototyping and Wireframing</span> */}
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Coding Frontend using Frameworks, Libraries or "hands on".</span>
+                  <span>Implementando com o time de Frontend usando frameworks e bibliotecas ou afins.</span>
+                  {/* <span>Coding Frontend using Frameworks, Libraries or "hands on".</span> */}
                 </li>
               </ul>
             </div>
@@ -50,30 +54,30 @@ export const Features1 = () => {
                 <img
                   src={feature1}
                   alt="f1"
-                  className="rounded-lg border-2 border-indigo-500 mx-auto sm:mx-unset"
+                  className="rounded-lg shadow-sm shadow-gray-950 mx-auto sm:mx-unset"
                 />
               </div>
-              <div className="py-3 pl-3 pr-2 rounded ">
+              <div className="py-3 pl-3 pr-2 rounded">
                 <img
                   src={feature2}
                   alt="f2"
-                  className="rounded-xl  border-2 border-indigo-500 mx-auto sm:mx-unset"
+                  className="rounded-xl shadow-lg shadow-gray-950 mx-auto sm:mx-unset"
                 />
               </div>
             </div>
-            <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
-              <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
+            <div className="w-1/2 lg:mt-20 pt-12 lg:pt-0 px-2 hidden sm:inline-block">
+              <div className="mb-4 py-3 pl-3 pr-2 rounded-lg">
                 <img
                   src={feature3}
                   alt="f3"
-                  className="rounded-xl  border-2 border-indigo-500"
+                  className="rounded-xl shadow-lg shadow-gray-950"
                 />
               </div>
-              <div className="py-3 pl-3 pr-2 rounded-lg ">
+              <div className="py-3 pl-3 pr-2 rounded-lg">
                 <img
                   src={feature4}
                   alt="f4"
-                  className="rounded-xl  border-2 border-indigo-500"
+                  className="rounded-xl shadow-lg shadow-gray-950"
                 />
               </div>
             </div>

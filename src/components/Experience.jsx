@@ -108,7 +108,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={SysMapLogo} class="w-[128px] h-[128px]" />
+                        <img src={SysMapLogo} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         Remoto - Maio/2022 - Agora
@@ -134,7 +134,7 @@ export const Experience = () => {
                       target="_blank"
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
                       Conheça o projeto
                     </a>
                   </div>
@@ -145,7 +145,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoEstacio} class="w-[128px] h-[128px]" />
+                        <img src={LogoEstacio} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         1997 - 2002
@@ -160,7 +160,7 @@ export const Experience = () => {
                       target="_blank"
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
                       Conheça a Intituição
                     </a>
                   </div>
@@ -175,7 +175,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoAtos} class="w-[128px] h-[128px]" />
+                        <img src={LogoAtos} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         Remoto - Maio/2022 - Agora
@@ -198,7 +198,7 @@ export const Experience = () => {
                       target="_blank"
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
                       Conheça o projeto
                     </a>
                   </div>
@@ -209,7 +209,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoUnisul} class="w-[128px] h-[128px]" />
+                        <img src={LogoUnisul} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         2009 - 2013
@@ -224,7 +224,7 @@ export const Experience = () => {
                       target="_blank"
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
                       Conheça a Intituição
                     </a>
                   </div>
@@ -239,7 +239,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoNsc} class="w-[128px] h-[128px]" />
+                        <img src={LogoNsc} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         Híbrido - Março/2020 - July/2021
@@ -262,7 +262,7 @@ export const Experience = () => {
                       target="_blank"
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
                       Conheça a empresa
                     </a>
                   </div>
@@ -273,7 +273,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoUnivali} class="w-[128px] h-[128px]" />
+                        <img src={LogoUnivali} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         2016 - 2018
@@ -288,7 +288,7 @@ export const Experience = () => {
                       target="_blank"
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
                       Conheça a Intituição
                     </a>
                   </div>
@@ -296,7 +296,7 @@ export const Experience = () => {
               </div>
                 <a href="https://www.univali.br/" target="_blank" className="text-blue-300 text-center text-xl py-2 px-4 w-full rounded-xl rounded-t-xl font-bold leading-loose mt-16 underline underline-offset-4"
                 >
-                <i class="fa-brands fa-linkedin mr-2 fa-lg"></i>
+                <i className="fa-brands fa-linkedin mr-2 fa-lg"></i>
                 Veja as experiências profissionais anteriores no meu Linkedin
                 </a>
             </div>

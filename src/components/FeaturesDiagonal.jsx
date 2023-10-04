@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { InvitationModal } from "./InvitationModal";
 import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
+// import { YouTube } from "astro-lazy-youtube-embed";
 
 export const FeaturesDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,15 +33,13 @@ export const FeaturesDiagonal = () => {
         <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
-              Accelerate Your Success
+              Pitch em vídeo
             </span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Build &amp; Launch without problems
+              Um pouco sobre mim
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
-              Our platform enables you to launch your data-driven projects with
-              ease. Boost productivity and achieve better results. Empower your
-              decision-making with advanced analytics
+              Pitch em vídeo onde me apresento de forma resumida. Você também poderá verificar meu Inglês pois a apresentação está em Inglês.
             </p>
             <div
               className="w-[210px] h-12 custom-button-colored mr-10 "
@@ -55,6 +54,11 @@ export const FeaturesDiagonal = () => {
               alt="f1"
               className="rounded-xl  custom-border-gray"
             />
+            {/* https://player.vimeo.com/video/867370170?h=a61e52f745 */}
+            {/* <YouTube
+              title="Pitch About me"
+              videoId="AeO_CIEn58c"
+            /> */}
           </div>
         </div>
       </motion.div>

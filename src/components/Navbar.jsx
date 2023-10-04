@@ -26,9 +26,9 @@ export const Navbar = () => {
         >
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-              <div className="mr-2">
+              {/* <div className="mr-2">
                 <img src={Logo} width='30' height="30" />
-              </div>
+              </div> */}
               <div className="title text-white text-4xl mt-2">
                 Thiago Lúcio
               </div>
@@ -64,16 +64,16 @@ export const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
               target="_blank"
-              className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer bg-customPrimary hover:bg-customDarkBg2 border-customPrimary transition"
+              className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
               >
-                <i class="fa-brands fa-linkedin fa-lg"></i>
+                <i className="fa-brands fa-linkedin fa-lg"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
               target="_blank"
-              className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customPrimary hover:bg-customDarkBg2 border-customPrimary transition"
+              className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
             >
-              <i class="fa-brands fa-github fa-lg"></i>
+              <i className="fa-brands fa-github fa-lg"></i>
             </a>
           </div>
         </motion.div>
@@ -111,7 +111,7 @@ export const Navbar = () => {
                 className="text-white rounded-xl bg-customDarkBg2 hover:bg-customDarkBg3 pl-6 pr-8 pt-2 pb-2 text-sm flex"
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin my-auto mr-2 fa-lg"></i>
+                <i className="fa-brands fa-linkedin my-auto mr-2 fa-lg"></i>
                 Linkedin
               </a>
               <a
