@@ -26,7 +26,7 @@ export const Features1 = () => {
                 All Frontend Cicle
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-              Working across the entire Frontend cycle mat from UX/UI analysis and interaction creation, prototyping, coding and implementation of web or mobile projects.
+                Working across the entire Frontend cycle mat from UX/UI analysis and interaction creation, prototyping, coding and implementation of web or mobile projects.
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
@@ -39,7 +39,7 @@ export const Features1 = () => {
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Coding Frontend using Market Frameworks or Libraries</span>
+                  <span>Coding Frontend using Frameworks, Libraries or "hands on".</span>
                 </li>
               </ul>
             </div>
@@ -50,14 +50,14 @@ export const Features1 = () => {
                 <img
                   src={feature1}
                   alt="f1"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
+                  className="rounded-lg border-2 border-indigo-500 mx-auto sm:mx-unset"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded ">
                 <img
                   src={feature2}
                   alt="f2"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
+                  className="rounded-xl  border-2 border-indigo-500 mx-auto sm:mx-unset"
                 />
               </div>
             </div>
@@ -66,14 +66,14 @@ export const Features1 = () => {
                 <img
                   src={feature3}
                   alt="f3"
-                  className="rounded-xl  custom-border-gray"
+                  className="rounded-xl  border-2 border-indigo-500"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded-lg ">
                 <img
                   src={feature4}
                   alt="f4"
-                  className="rounded-xl  custom-border-gray"
+                  className="rounded-xl  border-2 border-indigo-500"
                 />
               </div>
             </div>

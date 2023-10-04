@@ -1,23 +1,57 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import SysMapLogo from "../assets/images/logoSysmap.png";
+import LogoEstacio from "../assets/images/unesa-logo.jpg";
+import LogoAtos from "../assets/images/logoAtos.jpeg";
+import LogoUnisul from "../assets/images/unisul-logo.jpeg";
+import LogoNsc from "../assets/images/logonsctv.jpeg";
+import LogoUnivali from "../assets/images/univali-logo.jpg";
 
-const pricingData = [
-  "Seamless integration",
-  "Real-time data visualization",
-  "Advanced predictive analytics",
-  "Collaborative environment",
-  "Responsive customer support",
+const sysMapData = [
+  "Metodologias Ágeis",
+  "Analise UX/ UI",
+  "Análise de Prototipação Figma",
+  "Conversão Design para Códigos",
+  "Criação dos componentes de UI web/ mobile",
+  "Utilizando React Native, HTML, SCSS - Styled Components, TypeScript, StencilJS",
+  "Testes unitarios com Jest",
+  "Storybook e Chromatic",
+  "Plop para geração de componentes",
+  "Ambiente Azure",
+];
+
+const atosData = [
+  "Metodologias Ágeis",
+  "Analise UX/ UI",
+  "Análise de Prototipação Figma",
+  "Conversão Design para Códigos",
+  "Ciclo completo do Desenvolvimento Frontend",
+  "Utilizando Angular12, HTML, CSS, Typescript e Angular Material, Bootstrap",
+  "PrismaJS, Kubernetes, Docker, PostgreSQL",
+  "Semaphore, SonarQube",
+  "Jira and trello",
+  "Ambiente Azure",
+];
+
+const nscData = [
+  "Metodologias Ágeis",
+  "Analise UX/ UI",
+  "Análise de Prototipação Figma",
+  "Conversão Design para Códigos",
+  "Ciclo completo do Desenvolvimento Frontend",
+  "Utilizando ReactJS, NodeJS, NextJS,  Drupal, HTML, CSS, Typescript",
+  "GraphQL, NestJS, Kubernetes, Docker, PostgreSQL, Semaphore, Lambda AWS, S3 AWS, EC2 AWS",
+  "Jira and trello",
+  "Ambiente AWS",
 ];
 
 export const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isExperience, setIsExperience] = useState(true);
 
   const handleChange = () => {
-    setIsMonthly(!isMonthly);
+    setIsExperience(!isExperience);
   };
 
   return (
@@ -33,140 +67,242 @@ export const Pricing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="custom-block-subtitle">
-                Find Your Perfect Fit
+                Resumno profissional rápido
               </span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
-                Choose your best plan
+                Experience / Education
               </h2>
               <p className="mb-6 text-customGrayText">
-                Select the plan that suits your needs and benefit from our
-                analytics tools.
+                Minhas 3 últimas experiências profissionais e minhas principais
+                formações acadêmicas
               </p>
-              <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
+              <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-[198px] h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
                   type="checkbox"
                   className="peer appearance-none"
-                  checked={!isMonthly}
+                  checked={!isExperience}
                   onChange={handleChange}
                 />
-                <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-customPrimary   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
+                <span className="h-8 w-[7rem] flex items-center pr-2 bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-customPrimary   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
                 <div className="flex absolute text-white text-sm font-bold">
                   <div
                     className={
-                      isMonthly ? "mr-9 ml-3" : "mr-9 ml-3 text-gray-400"
+                      isExperience ? "mr-4 ml-3" : "mr-5 ml-1 text-gray-400"
                     }
                   >
-                    Monthly
+                    Experience
                   </div>
-                  <div className={isMonthly && "text-gray-400"}>Yearly</div>
+                  <div className={isExperience && "text-gray-400"}>
+                    Educational
+                  </div>
                 </div>
               </label>
             </div>
             <div className="flex flex-wrap flex-col lg:flex-row -mx-4 items-center mt-20">
+              {/* TABLE 1 */}
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                  <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    Beginner
-                  </h4>
-                  <div className="flex justify-start items-end">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      $0
+                {isExperience ? (
+                  <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                      Frontend UX/ UI Developer
+                    </h4>
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="mt-4 mr-2">
+                        <img src={SysMapLogo} class="w-[128px] h-[128px]" />
+                      </div>
+                      <div className="text-indigo-200 text-center text-sm mt-2">
+                        Remoto - Maio/2022 - Agora
+                      </div>
                     </div>
-                    <div className="text-gray-500">
-                      {isMonthly ? "/ month" : "/ year"}
-                    </div>
-                  </div>
 
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    The perfect way to get started and get used to our tools.
-                  </p>
-                  <ul className="mb-2 2xl:mb-6 text-white">
-                    {pricingData.map((text, index) => (
-                      <li className="mb-4 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                    onClick={() => setIsModalOpen(true)}
-                  >
-                    Get Started
+                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm">
+                      Sócio co-participativo trabalhando junto aos projetos de
+                      clientes da empresa junto aos times de Design System,
+                      criando a Biblioteca de componentes para aplicações Web e
+                      Mobile
+                    </p>
+                    <ul className="mb-2 2xl:mb-6 text-white">
+                      {sysMapData.map((text, index) => (
+                        <li className="mb-4 flex" key={`${text}-${index}`}>
+                          <CheckArrowIcon />
+                          <span>{text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href="https://www.semparar.com.br/"
+                      target="_blank"
+                      className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      Conheça o projeto
+                    </a>
                   </div>
-                </div>
+                ) : (
+                  <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                      Análise de Sistemas
+                    </h4>
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="mt-4 mr-2">
+                        <img src={LogoEstacio} class="w-[128px] h-[128px]" />
+                      </div>
+                      <div className="text-indigo-200 text-center text-sm mt-2">
+                        1997 - 2002
+                      </div>
+                    </div>
+
+                    <p className="text-sm mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-center">
+                      Bacharelado em Análise de Sistemas
+                    </p>
+                    <a
+                      href="hhttps://estacio.br/"
+                      target="_blank"
+                      className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      Conheça a Intituição
+                    </a>
+                  </div>
+                )}
               </div>
+              {/* TABLE 2 */}
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="px-8 py-8 bg-customDarkBg3 rounded-3xl">
-                  <h4 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-white text-left">
-                    Standard
-                  </h4>
-                  <div className="flex justify-start items-end">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? "$19" : "$180"}
+                {isExperience ? (
+                  <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                      Frontend UX/ UI Developer
+                    </h4>
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="mt-4 mr-2">
+                        <img src={LogoAtos} class="w-[128px] h-[128px]" />
+                      </div>
+                      <div className="text-indigo-200 text-center text-sm mt-2">
+                        Remoto - Maio/2022 - Agora
+                      </div>
                     </div>
-                    <div className="text-gray-500">
-                      {isMonthly ? "/ month" : "/ year"}
+
+                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm">
+                      Trabalhando com projeto MySeat da empresa entre outros secundários. Desenvolvendo aplicações Web e PWA do projeto e trabalhando em todo ciclo Front/ Backend
+                    </p>
+                    <ul className="mb-2 2xl:mb-6 text-white">
+                      {atosData.map((text, index) => (
+                        <li className="mb-4 flex" key={`${text}-${index}`}>
+                          <CheckArrowIcon />
+                          <span>{text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href="https://atos.net/pt-br/brasil-atos/myseat"
+                      target="_blank"
+                      className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      Conheça o projeto
+                    </a>
+                  </div>
+                ) : (
+                  <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                      Desenvolvimento Web
+                    </h4>
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="mt-4 mr-2">
+                        <img src={LogoUnisul} class="w-[128px] h-[128px]" />
+                      </div>
+                      <div className="text-indigo-200 text-center text-sm mt-2">
+                        2009 - 2013
+                      </div>
                     </div>
+
+                    <p className="text-sm mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-center">
+                      Bacharelado em Desenvolvimento Web
+                    </p>
+                    <a
+                      href="https://www.unisul.br/"
+                      target="_blank"
+                      className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      Conheça a Intituição
+                    </a>
                   </div>
-                  <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
-                    Unlock more features and elevate your data analysis.
-                  </p>
-                  <ul className="mb-14 text-white">
-                    {pricingData.map((text, index) => (
-                      <li className="mb-4 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div
-                    className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-20"
-                    onClick={() => setIsModalOpen(true)}
-                  >
-                    Get Started
-                  </div>
-                </div>
+                )}
               </div>
+              {/* TABLE 3 */}
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                  <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    Premium
-                  </h4>
-                  <div className="flex justify-start items-end">
-                    <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? "$36" : "$390"}
+                {isExperience ? (
+                  <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                      Frontend UX/ UI Developer
+                    </h4>
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="mt-4 mr-2">
+                        <img src={LogoNsc} class="w-[128px] h-[128px]" />
+                      </div>
+                      <div className="text-indigo-200 text-center text-sm mt-2">
+                        Híbrido - Março/2020 - July/2021
+                      </div>
                     </div>
-                    <div className="text-gray-500">
-                      {isMonthly ? "/ month" : "/ year"}
+
+                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm">
+                      Filial da Rede Globo de Televisão no Estado de Santa Catarina, trabalhando principalmente nos projetos G1 de Santa Catarina, NSC Total (jornal local) e Hora de Santa Catarina além da Rádio Atlântida.
+                    </p>
+                    <ul className="mb-2 2xl:mb-6 text-white">
+                      {nscData.map((text, index) => (
+                        <li className="mb-4 flex" key={`${text}-${index}`}>
+                          <CheckArrowIcon />
+                          <span>{text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href="https://www.nsctotal.com.br/"
+                      target="_blank"
+                      className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      Conheça a empresa
+                    </a>
+                  </div>
+                ) : (
+                  <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                      Design de Interação UX/ UI
+                    </h4>
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="mt-4 mr-2">
+                        <img src={LogoUnivali} class="w-[128px] h-[128px]" />
+                      </div>
+                      <div className="text-indigo-200 text-center text-sm mt-2">
+                        2016 - 2018
+                      </div>
                     </div>
+
+                    <p className="text-sm mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-center">
+                      Pós-Graduação em Design de Interação
+                    </p>
+                    <a
+                      href="https://www.univali.br/"
+                      target="_blank"
+                      className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
+                      Conheça a Intituição
+                    </a>
                   </div>
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    Experience the full power of our  analytic platform
-                  </p>
-                  <ul className="mb-2 2xl:mb-6 text-white">
-                    {pricingData.map((text, index) => (
-                      <li className="mb-4 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                    onClick={() => setIsModalOpen(true)}
-                  >
-                    Get Started
-                  </div>
-                </div>
+                )}
               </div>
+                <a href="https://www.univali.br/" target="_blank" className="text-blue-300 text-center text-xl py-2 px-4 w-full rounded-xl rounded-t-xl font-bold leading-loose mt-16 underline underline-offset-4"
+                >
+                <i class="fa-brands fa-linkedin mr-2 fa-lg"></i>
+                Veja as experiências profissionais anteriores no meu Linkedin
+                </a>
             </div>
           </div>
         </motion.div>
       </div>
-      {isModalOpen && (
-        <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
-      )}
     </section>
   );
 };
