@@ -47,7 +47,7 @@ const nscData = [
   "Ambiente AWS",
 ];
 
-export const Pricing = () => {
+export const Experience = () => {
   const [isExperience, setIsExperience] = useState(true);
 
   const handleChange = () => {
@@ -56,7 +56,7 @@ export const Pricing = () => {
 
   return (
     <section className="w-screen flex justify-center bg-customDarkBg2 relative">
-      <div className="absolute -top-16" id="pricing" />
+      <div className="absolute -top-16" id="experience" />
       <div className="pb-20 pt-12 bg-customDarkBg2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
         <motion.div
           initial={{ opacity: 0 }}

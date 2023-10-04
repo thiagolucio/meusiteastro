@@ -20,6 +20,7 @@ module.exports = {
       },
       fontFamily: {
         Inter: "Inter",
+        Seaweed: "Seaweed",
       },
       screens: {
         xs: "530px",

@@ -5,6 +5,8 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
+import '@fontsource/kaushan-script';
+import '@fontsource/seaweed-script';
 
 export interface Props {
   title: string;
@@ -36,6 +38,9 @@ const { title } = Astro.props;
         background-color: #1b202c;
         overflow-x: hidden;
         scroll-behavior: smooth;
+      }
+      .title {
+        font-family: 'Seaweed Script', sans-serif;
       }
     </style>
   </body>

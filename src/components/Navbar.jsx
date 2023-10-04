@@ -7,7 +7,7 @@ import { GithubIcon } from "../assets/icons/GithubIcon";
 const navbarLinks = [
   { label: "Start", href: "#home", ariaLabel: "Start" },
   { label: "ProFit", href: "#features", ariaLabel: "ProFit" },
-  { label: "Education/ Experience", href: "#pricing", ariaLabel: "Education/ Experience" },
+  { label: "Education/ Experience", href: "#experience", ariaLabel: "Education/ Experience" },
   { label: "Feedback", href: "#feedback", ariaLabel: "Feedback" },
   { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
 ];
@@ -27,9 +27,9 @@ export const Navbar = () => {
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
               <div className="mr-2">
-                <img src={Logo} width='48' height="56" />
+                <img src={Logo} width='30' height="30" />
               </div>
-              <div className="text-white font-['Inter'] text-xl">
+              <div className="title text-white text-4xl mt-2">
                 Thiago Lúcio
               </div>
             </div>
