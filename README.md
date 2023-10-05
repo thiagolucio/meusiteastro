@@ -4,7 +4,7 @@
 Astro, React, Tailwind, Framer Motion
 
 ## Live link
-[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
+[Thiago Lucio Site](https://thiagolucio.com.br/)
 
 ##  Project Structure
 
