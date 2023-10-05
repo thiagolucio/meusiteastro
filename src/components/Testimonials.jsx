@@ -40,10 +40,10 @@ export const Testimonials = () => (
         transition={{ duration: 0.4, delay: 0.3 }}
       >
         <div className="custom-block-subtitle text-center mb-6">
-          Testimonials
+          Projetos que tive o prazer de participar
         </div>
         <div className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
-          People like you love Tailcast
+          Alguns Projetos
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
@@ -52,22 +52,22 @@ export const Testimonials = () => (
               className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4"
               key={`${testimonial.customerName}-${index}`}
             >
-              <div className="flex mb-2">
-                <QuoteIcon />
-              </div>
-              <div className="custom-content-text-white">
-                "{testimonial.content}"
-              </div>
-              <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <img src={testimonial.image.src} alt="" width="45px" />
+              <div className="mt-4 mb-2 xl:mt-8 xl:mb-4 grid justify-items-center text-center">
+                <img src={testimonial.image.src} alt="" width="200px" />
                 <div className="flex flex-col ml-4">
-                  <div className="custom-content-text-white font-medium">
+                  <div className="custom-content-text-white font-medium mt-2">
                     {testimonial.customerName}
                   </div>
                   <div className="custom-content-text-gray">
                     {testimonial.customerTitle}
                   </div>
                 </div>
+              </div>
+              <div className="flex mb-2">
+                <QuoteIcon />
+              </div>
+              <div className="custom-content-text-white text-justify">
+                "{testimonial.content}"
               </div>
             </div>
           ))}

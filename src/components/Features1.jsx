@@ -37,12 +37,12 @@ export const Features1 = () => {
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Prototipando Sessionando</span>
+                  <span>Prototipando e Sessionando para o Frontend</span>
                   {/* <span>Prototyping and Wireframing</span> */}
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Implementando com o time de Frontend usando frameworks e bibliotecas ou afins.</span>
+                  <span>Implementando com o time de Frontend usando frameworks/ bibliotecas ou afins.</span>
                   {/* <span>Coding Frontend using Frameworks, Libraries or "hands on".</span> */}
                 </li>
               </ul>
