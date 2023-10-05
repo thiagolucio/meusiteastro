@@ -26,9 +26,9 @@ export const Navbar = () => {
         >
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-              {/* <div className="mr-2">
-                <img src={Logo} width='30' height="30" />
-              </div> */}
+              <div className="mr-2">
+                <img src={Logo} width='30' height="30" alt="Logo" />
+              </div>
               <div className="title text-white text-4xl mt-2">
                 Thiago Lúcio
               </div>
