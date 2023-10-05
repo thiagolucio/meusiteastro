@@ -18,15 +18,17 @@ export const Features2 = () => (
             <div className="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
               <img
                 src={euWebDesigner.src}
-                alt="f1"
-                className="rounded-xl  custom-border-gray"
+                alt="Eu na empresa em Minas Gerais em 2013"
+                className="rounded-xl"
+                width="400px"
               />
             </div>
             <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
               <img
                 src={euFrontEnd.src}
-                alt="f2"
-                className="rounded-xl  custom-border-gray"
+                alt="Eu em casa em 2023"
+                className="rounded-xl"
+                width="400px"
               />
             </div>
           </div>
@@ -41,8 +43,10 @@ export const Features2 = () => (
               De Webdesigner para o<span className="text-customPrimary"> Front-end</span>
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
-              Eu sou o antigo Webdesigner que em meados de 2016 começou a migrar naturalmente para o Front-end e continua nesse caminho até hoje.
-            </p>
+              Eu sou o antigo Webdesigner que em meados de 2016 começou a migrar naturalmente para o Front-end. Aos poucos estou evoluindo no Desenvolvimento de Sistemas web e mobile.
+              <br />
+             Staks principais:
+            </p>           
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
@@ -55,6 +59,10 @@ export const Features2 = () => (
               <li className="mb-4 flex">
                 <CheckArrowIcon />
                 <span>JavaScript & TypeScript</span>
+              </li>           
+              <li className="mb-4 flex">
+                <CheckArrowIcon />
+                <span>Design de Interação (UX e UI)</span>
               </li>
             </ul>
           </div>

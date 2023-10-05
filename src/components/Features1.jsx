@@ -23,10 +23,10 @@ export const Features1 = () => {
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="custom-block-subtitle">Professional Fit</span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-                Todo ciclo do Frontend
+                Todo ciclo do <span className="text-customPrimary">Front-end</span>
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Trabalhando por toda a esteira do ciclo de Frontend. Trabalhando desde a análise do processo de interação com o usuário, criando protótipos, codificando e implementando projetos web ou mobile.
+                Trabalhando por toda a esteira do ciclo de Front-end. Trabalhando desde a análise do processo de interação com o usuário, criando protótipos, codificando e implementando projetos web ou mobile.
                 {/* Working across the entire Frontend cycle mat from UX/UI analysis and interaction creation, prototyping, coding and implementation of web or mobile projects. */}
               </p>
               <ul className="mb-6 text-white">
@@ -42,7 +42,7 @@ export const Features1 = () => {
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Implementando com o time de Frontend usando frameworks/ bibliotecas ou afins.</span>
+                  <span>Implementando com o time de Front-end usando frameworks/ bibliotecas ou afins.</span>
                   {/* <span>Coding Frontend using Frameworks, Libraries or "hands on".</span> */}
                 </li>
               </ul>

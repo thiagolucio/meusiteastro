@@ -140,7 +140,7 @@ export const Experience = () => {
                   </div>
                 ) : (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                    <h4 className="mb-2 text-lg font-bold text-white text-center">
                       Análise de Sistemas
                     </h4>
                     <div className="flex flex-col justify-center items-center">
@@ -204,7 +204,7 @@ export const Experience = () => {
                   </div>
                 ) : (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                    <h4 className="mb-2 text-lg font-bold text-white text-center">
                       Desenvolvimento Web
                     </h4>
                     <div className="flex flex-col justify-center items-center">
@@ -268,7 +268,7 @@ export const Experience = () => {
                   </div>
                 ) : (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                    <h4 className="mb-2 text-lg font-bold text-white text-center">
                       Design de Interação UX/ UI
                     </h4>
                     <div className="flex flex-col justify-center items-center">
@@ -294,10 +294,10 @@ export const Experience = () => {
                   </div>
                 )}
               </div>
-                <a href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/" target="_blank" className="text-blue-300 text-center text-xl py-2 px-4 w-full rounded-xl rounded-t-xl font-bold leading-loose mt-16 underline underline-offset-4"
+                <a href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/" target="_blank" className="text-blue-300 text-center text-lg py-2 px-4 w-full mt-16 underline underline-offset-4"
                 >
-                <i className="fa-brands fa-linkedin mr-2 fa-lg"></i>
-                Veja as experiências profissionais anteriores no meu Linkedin
+                  <i className="fa-brands fa-linkedin mr-2 fa-lg"></i>
+                  Veja as experiências profissionais anteriores no meu Linkedin
                 </a>
             </div>
           </div>
