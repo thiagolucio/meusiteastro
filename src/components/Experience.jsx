@@ -70,7 +70,7 @@ export const Experience = () => {
                 Resumno profissional rápido
               </span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
-                Experience / Education
+                Experiência & Eduação
               </h2>
               <p className="mb-6 text-customGrayText">
                 Minhas 3 últimas experiências profissionais e minhas principais
@@ -90,10 +90,10 @@ export const Experience = () => {
                       isExperience ? "mr-4 ml-3" : "mr-5 ml-1 text-gray-400"
                     }
                   >
-                    Experience
+                    Experiência
                   </div>
                   <div className={isExperience && "text-gray-400"}>
-                    Educational
+                    Educação
                   </div>
                 </div>
               </label>
@@ -108,7 +108,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={SysMapLogo} className="w-[128px] h-[128px]" />
+                        <img src={SysMapLogo.src} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         Remoto - Maio/2022 - Agora
@@ -145,7 +145,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoEstacio} className="w-[128px] h-[128px]" />
+                        <img src={LogoEstacio.src} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         1997 - 2002
@@ -175,7 +175,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoAtos} className="w-[128px] h-[128px]" />
+                        <img src={LogoAtos.src} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         Remoto - Maio/2022 - Agora
@@ -209,7 +209,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoUnisul} className="w-[128px] h-[128px]" />
+                        <img src={LogoUnisul.src} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         2009 - 2013
@@ -239,7 +239,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoNsc} className="w-[128px] h-[128px]" />
+                        <img src={LogoNsc.src} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         Híbrido - Março/2020 - July/2021
@@ -273,7 +273,7 @@ export const Experience = () => {
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
-                        <img src={LogoUnivali} className="w-[128px] h-[128px]" />
+                        <img src={LogoUnivali.src} className="w-[128px] h-[128px]" />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
                         2016 - 2018
@@ -294,7 +294,7 @@ export const Experience = () => {
                   </div>
                 )}
               </div>
-                <a href="https://www.univali.br/" target="_blank" className="text-blue-300 text-center text-xl py-2 px-4 w-full rounded-xl rounded-t-xl font-bold leading-loose mt-16 underline underline-offset-4"
+                <a href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/" target="_blank" className="text-blue-300 text-center text-xl py-2 px-4 w-full rounded-xl rounded-t-xl font-bold leading-loose mt-16 underline underline-offset-4"
                 >
                 <i className="fa-brands fa-linkedin mr-2 fa-lg"></i>
                 Veja as experiências profissionais anteriores no meu Linkedin

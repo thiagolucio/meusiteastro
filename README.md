@@ -3,8 +3,8 @@
 ## Tech stack: 
 Astro, React, Tailwind, Framer Motion
 
-## Live link
-[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
+## Website link
+[thiagolucio Site](https://thiagolucio.com.br/)
 
 ##  Project Structure
 
