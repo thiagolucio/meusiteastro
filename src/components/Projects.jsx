@@ -84,7 +84,7 @@ export const Projects = () => (
         </div>
           <div className="text-center mt-16">
             <a
-              href="#projecs"
+              href="#FAQ"
               className="text-blue-300 text-center text-lg py-2 px-4 w-full mt-16"
             >
               Veja mais projetos

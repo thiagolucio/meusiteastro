@@ -9,7 +9,7 @@ const navbarLinks = [
   { label: "ProFit", href: "#features", ariaLabel: "ProFit" },
   { label: "Education/ Experience", href: "#experience", ariaLabel: "Education/ Experience" },
   { label: "Feedback", href: "#feedback", ariaLabel: "Feedback" },
-  { label: "Projects", href: "#projects", ariaLabel: "Projects" },
+  { label: "Projects", href: "#FAQ", ariaLabel: "Projects" },
 ];
 
 export const Navbar = () => {
