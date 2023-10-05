@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import { InvitationModal } from "./InvitationModal";
-import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
-// import { YouTube } from "astro-lazy-youtube-embed";
 
 export const FeaturesDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,32 +31,26 @@ export const FeaturesDiagonal = () => {
         <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
-              Pitch em vídeo
+              pitch profissional em vídeo
             </span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
               Um pouco sobre mim
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
-              Pitch em vídeo onde me apresento de forma resumida. Você também poderá verificar meu Inglês pois a apresentação está em Inglês.
+              Pitch Profissional em vídeo onde me apresento de forma resumida. Você também poderá verificar meu Inglês pois a apresentação está em Inglês.
             </p>
             <div
               className="w-[210px] h-12 custom-button-colored mr-10 "
               onClick={() => setIsModalOpen(true)}
             >
-              Get Started
+              Download CV
             </div>
           </div>
           <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
-            <img
-              src={featuresdiagonal}
-              alt="f1"
-              className="rounded-xl  custom-border-gray"
-            />
             {/* https://player.vimeo.com/video/867370170?h=a61e52f745 */}
-            {/* <YouTube
-              title="Pitch About me"
-              videoId="AeO_CIEn58c"
-            /> */}
+            {/* https://www.youtube.com/watch?v=AeO_CIEn58c */}
+            {/* https://youtu.be/AeO_CIEn58c?si=gmRwfonSJPndZjhO */}
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AeO_CIEn58c?si=o_HeZFoi_dTd33Ff" title="Short Pitch about me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </motion.div>
@@ -77,7 +69,7 @@ export const FeaturesDiagonal = () => {
         </svg>
       </div>
       {isModalOpen && (
-        <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+        <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} isCvEnd />
       )}
     </section>
   );

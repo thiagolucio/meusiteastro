@@ -2,12 +2,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
-import dashboard from "../assets/images/hero-img.jpg";
+import HeroImage from "../assets/images/hero-img.jpg";
 
 export const Hero = () => {
   const [isModalOpenEn, setIsModalOpenEn] = useState(false);
   const [isModalOpenPt, setIsModalOpenPt] = useState(false);
-  const isCvEnd= true;
 
   return (
     <section
@@ -73,8 +72,8 @@ export const Hero = () => {
         >
           <div className="relative w-screen flex justify-center">
             <img
-              src={dashboard}
-              alt="123"
+              src={HeroImage.src}
+              alt="Image with Thiago Lucio in front of a laptop"
               className="w-4/5 2xl:w-[1240px] mx-auto absolute z-10 rounded-xl hero-dashboard-border-gradient lg:top-6 xl:top-0 shadow-lg shadow-[#000000]"
             />
           </div>

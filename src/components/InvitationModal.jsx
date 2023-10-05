@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+// import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import { CloseIcon } from "../assets/icons/CloseIcon";
 
 export const InvitationModal = ({ setIsOpen, isCvEnd }) => (
@@ -111,10 +111,7 @@ export const InvitationModal = ({ setIsOpen, isCvEnd }) => (
               </div> 
               )}
             </div>
-            <div
-              className="fixed top-6 right-6 z-50 w-5 h-5 cursor-pointer"
-              onClick={() => setIsOpen(false)}
-            >
+            <div className="fixed top-6 right-6 z-50 w-5 h-5 cursor-pointer" onClick={() => setIsOpen(false)}>
               <CloseIcon />
             </div>
           </div>
