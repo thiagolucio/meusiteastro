@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-  { label: "Start", href: "#home", ariaLabel: "Start" },
+  { label: "Inicio", href: "#home", ariaLabel: "Inicio" },
   { label: "ProFit", href: "#features", ariaLabel: "ProFit" },
-  { label: "Education/ Experience", href: "#experience", ariaLabel: "Education/ Experience" },
-  { label: "Feedback", href: "#feedback", ariaLabel: "Feedback" },
-  { label: "Projects", href: "#FAQ", ariaLabel: "Projects" },
+  { label: "XP e Educação", href: "#experience", ariaLabel: "XP e Educação" },
+  { label: "Projetos", href: "#feedback", ariaLabel: "Projetos" },
+  // { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
 ];
 
 export const Navbar = () => {

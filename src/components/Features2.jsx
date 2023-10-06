@@ -42,10 +42,10 @@ export const Features2 = () => (
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
               De Webdesigner para o<span className="text-customPrimary"> Front-end</span>
             </h2>
-            <p className="mb-12 text-customGrayText leading-loose">
-              Eu sou o antigo Webdesigner que em meados de 2016 começou a migrar naturalmente para o Front-end. Aos poucos estou evoluindo no Desenvolvimento de Sistemas web e mobile.
+            <p className="mb-12 text-gray-200 leading-loose text-justify">
+              Eu sou o antigo Webdesigner(2002) que em meados de 2016 começou a migrar naturalmente para o Front-end. Aos poucos estou evoluindo no Desenvolvimento de Sistemas web e mobile.
               <br />
-             Staks principais:
+              Stacks principais:
             </p>           
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">

@@ -50,49 +50,51 @@ export const Projects = () => (
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
           {projectsData.map((project, index) => (
             <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4"
+              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-2/3 custom-border-gray-800 shadow-lg shadow-gray-950 rounded-xl bg-customDarkBg1 flex flex-col px-6 py-4"
               key={`${project.projectName}-${index}`}
             >
-              <div className="mt-4 mb-2 xl:mt-8 xl:mb-4 grid justify-items-center text-center">
-                <img
-                  src={project.image.src}
-                  alt="Imagem do projeto"
-                  width="200px"
-                />
-                <div className="flex flex-col">
-                  <div className="text-customPrimary text-2xl font-medium mt-2">
+              <div className="mt-4 mb-2 xl:mt-8 xl:mb-4">
+                <div className="flex flex-col text-left mb-3">
+                  <div className="text-customSecondary text-xl font-medium mt-2">
                     {project.projectName}
                   </div>
-                  <div className="custom-content-text-gray">
+                  <div className="text-blue-200 text-sm font-bold">
                     {project.projectTitle}
                   </div>
                 </div>
+                <div className="flex w-full justify-center">
+                  <img
+                    src={project.image.src}
+                    alt="Imagem do projeto"
+                    className="w-[180px] object-cover rounded-lg shadow-lg shadow-gray-950 mx-auto sm:mx-unset"
+                  />
+                </div>
               </div>
-              <div className="custom-content-text-white text-justify">
-                "{project.content}"
+              <div className="text-sm text-white text-left">
+                {project.content}
               </div>
               <div className="mt-4 mb-5">
                 <a
                   href={project.url}
                   className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
                 >
-                  <i class="fa-solid fa-link mr-1 fa-lg"></i> Conheça o projeto
+                  <i className="fa-solid fa-link mr-1 fa-lg"></i> Conheça o projeto
                 </a>
               </div>
             </div>
           ))}
         </div>
-          <div className="text-center mt-16">
-            <a
-              href="#FAQ"
-              className="text-blue-300 text-center text-lg py-2 px-4 w-full mt-16"
-            >
-              Veja mais projetos
-              <p>
-                <i class="fa-solid fa-circle-arrow-down text-6xl mt-4 cursor-pointer -customDarkBg2 hover:text-customPrimary border-customPrimary transition"></i>
-              </p>
-            </a>
-          </div>
+        <div className="text-center mt-16">
+          <a
+            href="#FAQ"
+            className="text-blue-300 text-center text-lg py-2 px-4 w-full mt-16"
+          >
+            Veja mais projetos
+            <p>
+              <i className="fa-solid fa-circle-arrow-down text-6xl mt-4 cursor-pointer -customDarkBg2 hover:text-customPrimary border-customPrimary transition"></i>
+            </p>
+          </a>
+        </div>
       </motion.div>
     </div>
   </section>

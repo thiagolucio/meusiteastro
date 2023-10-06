@@ -28,11 +28,11 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4">
-            <span className="inline md:hidden">Frontend</span>
-            <span className="hidden md:inline">Frontend</span>
+          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-white px-8 sm:px-8 md:px-20 lg:px-4">
+            <span className="inline md:hidden text-customPrimary">Front-end</span>
+            <span className="hidden md:inline text-customPrimary">Front-end</span>
           </div>
-          <div className="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-white  px-8 sm:px-20 md:px-24 lg:px-24">
+          <div className="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-white px-8 sm:px-20 md:px-24 lg:px-24">
             Developer
           </div>
         </motion.div>
@@ -41,8 +41,11 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <div className="text-customGrayText text-base mt-10 px-12 sm:px-48 ">
-          Using technologies based on Front-end Stacks such as HTML, CSS, JavaScript, TypeScript. Working on projects in Web and Mobile applications. Implementing Interaction Design concepts in the intuitive construction of interfaces with UX and UI concepts.
+          <div className="text-customGrayText text-base text-left mt-10 px-12 sm:px-48 ">
+            Using technologies based on Front-end Stacks such as HTML, CSS, JavaScript, TypeScript. 
+            Working on projects in Web and Mobile applications. 
+            Implementing Interaction Design concepts in the intuitive construction of interfaces with 
+            UX and UI concepts.
           </div>
         </motion.div>
         <motion.div

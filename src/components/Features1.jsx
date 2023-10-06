@@ -22,8 +22,8 @@ export const Features1 = () => {
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="custom-block-subtitle">Professional Fit</span>
-              <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-                Todo ciclo do <span className="text-customPrimary">Front-end</span>
+              <h2 className="mt-6 mb-8 text-2xl custom-block-big-title">
+                Todo ciclo <span className="text-customPrimary">Front-end</span>
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
                 Trabalhando por toda a esteira do ciclo de Front-end. Trabalhando desde a análise do processo de interação com o usuário, criando protótipos, codificando e implementando projetos web ou mobile.

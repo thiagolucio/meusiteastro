@@ -1,26 +1,32 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+import g1Sc from "../assets/images/g1sc/g1.svg";
+import Nix from "../assets/images/g1sc/g1.svg";
+import Rizoluto from "../assets/images/g1sc/g1.svg";
+import Vigia from "../assets/images/g1sc/g1.svg";
+
 const FAQData = [
   {
-    question: "Can I upgrade or downgrade my plan at any time?",
-    answer:
-      "Yes, you can easily upgrade or downgrade your plan at any time. Simply navigate to the account settings in your dashboard and choose the desired plan. The changes will be reflected immediately, and any adjustments in pricing will be applied on your next billing cycle. Our support team is more than happy to provide guidance and recommendations.",
+    question: "G1 SANTA CATARINA",
+    image: <img src={g1Sc.src} alt="Site G1 Santa Catarina" className="w-[60%] h-auto" />,
+    answer: 
+      "Trabalhando na NSC Comunicações eu trabalhei em alguns projetos da empresa. Dentre eles o G1 de Santa Catarina onde trabalhava com o time do Rio de Janiero Remotamente no desenvolvimento da versão Web do Portal. \n O trabalho tinha como cotidiano trabalhar com GraphQL, ReactJS e NextJS"
   },
   {
     question: "How to claim your 25% discount offer?",
-    answer:
-      "To claim your 25% discount, simply sign up for an account and enter the promotional code at checkout. The discount will be applied automatically to your purchase.",
+    image: <img src={Nix.src} alt="Site do Nix Gateway de Pagamento" className="w-[60%] h-auto" />,
+    answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",        
   },
   {
     question: "What's your refund policy?",
-    answer:
-      "We offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our product, simply contact our support team within 30 days of purchase for a full refund.",
+    image: <img src={Rizoluto.src} alt="Site Rizoluto" className="w-[60%] h-auto" />,
+    answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",        
   },
   {
     question: "How to get support for the product?",
-    answer:
-      "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+    image: <img src={Vigia.src} alt="Site Vigia da Suntech" className="w-[60%] h-auto" />,
+    answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",        
   },
 ];
 
@@ -46,6 +52,7 @@ export const FAQ = () => (
               <div className="w-full p-1">
                 <FAQBox
                   title={item.question}
+                  image={item.image}
                   content={item.answer}
                   key={`${item.question}-${item.answer}`}
                   defaultOpen={index === 0}
@@ -59,7 +66,7 @@ export const FAQ = () => (
   </section>
 );
 
-const FAQBox = ({ defaultOpen, title, content }) => {
+const FAQBox = ({ defaultOpen, title, image, content }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
@@ -75,8 +82,11 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           className={`text-customGrayText pt-4 transition-all duration-300 overflow-hidden ${
             isOpen ? "max-h-96" : "max-h-0"
           }`}
-        >
-          {content}
+          >
+          <div className="w-full flex justify-center gap-2">
+            {image}
+            {content}
+          </div>
         </p>
       </div>
       <div className="absolute top-6 right-4 sm:top-8 sm:right-8">

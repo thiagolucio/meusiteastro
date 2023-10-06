@@ -30,16 +30,16 @@ export const InvitationModal = ({ setIsOpen, isCvEnd }) => (
                 </h2>
                 <ul className="mb-6 text-white mt-12">
                   <li className="mb-4 flex text-sky-400">
-                    <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
-                    <span class="underline underline-offset-4">Technical certificates on google drive <small class="text-customSecondary font-bold">(need request access)</small></span>
+                    <i className="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                    <span className="underline underline-offset-4">Technical certificates on google drive <small className="text-customSecondary font-bold">(need request access)</small></span>
                   </li>
                   <li className="mb-4 flex hover:ring-indigo-300 text-sky-400">
-                    <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
-                    <a href="https://www.behance.net/thiagolucio" target="_blank" rel="noreferrer" class="underline underline-offset-4"><span>Old portfolio on Behance</span></a>
+                    <i className="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                    <a href="https://www.behance.net/thiagolucio" target="_blank" rel="noreferrer" className="underline underline-offset-4"><span>Old portfolio on Behance</span></a>
                   </li>
                   <li className="mb-4 flex text-sky-400">
-                    <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>     
-                    <a href="https://github.com/thiagolucio" target="_blank" rel="noreferrer" class="underline underline-offset-4"><span>Projects on github</span></a>
+                    <i className="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>     
+                    <a href="https://github.com/thiagolucio" target="_blank" rel="noreferrer" className="underline underline-offset-4"><span>Projects on github</span></a>
                   </li>
                 </ul>
               </div>
@@ -53,16 +53,16 @@ export const InvitationModal = ({ setIsOpen, isCvEnd }) => (
               </h2>
               <ul className="mb-6 text-white mt-12">
                 <li className="mb-4 flex text-sky-400">
-                  <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
-                  <span class="underline underline-offset-4">Certificados técnicos no Google Drive<small class="text-customSecondary font-bold"> (solicite acesso)</small></span>
+                  <i className="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                  <span className="underline underline-offset-4">Certificados técnicos no Google Drive<small className="text-customSecondary font-bold"> (solicite acesso)</small></span>
                 </li>
                 <li className="mb-4 flex hover:ring-indigo-300 text-sky-400">
-                  <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
-                  <a href="https://www.behance.net/thiagolucio" target="_blank" rel="noreferrer" class="underline underline-offset-4"><span>Portifólio antigo no Behance</span></a>
+                  <i className="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                  <a href="https://www.behance.net/thiagolucio" target="_blank" rel="noreferrer" className="underline underline-offset-4"><span>Portifólio antigo no Behance</span></a>
                 </li>
                 <li className="mb-4 flex text-sky-400">
-                  <i class="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
-                  <a href="https://github.com/thiagolucio" target="_blank" rel="noreferrer" class="underline underline-offset-4"><span>Projetos no Github</span></a>
+                  <i className="fa-solid fa-arrow-up-right-from-square my-auto mr-2"></i>
+                  <a href="https://github.com/thiagolucio" target="_blank" rel="noreferrer" className="underline underline-offset-4"><span>Projetos no Github</span></a>
                 </li>
               </ul>
             </div>
