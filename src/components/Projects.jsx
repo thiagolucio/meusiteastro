@@ -50,7 +50,7 @@ export const Projects = () => (
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
           {projectsData.map((project, index) => (
             <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-2/3 custom-border-gray-800 shadow-lg shadow-gray-950 rounded-xl bg-customDarkBg1 flex flex-col px-6 py-4"
+              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-2/3 custom-border-gray-800 rounded-xl bg-customDarkBg1 flex flex-col px-6 py-4"
               key={`${project.projectName}-${index}`}
             >
               <div className="mt-4 mb-2 xl:mt-8 xl:mb-4">

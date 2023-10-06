@@ -9,23 +9,23 @@ import Vigia from "../assets/images/g1sc/g1.svg";
 const FAQData = [
   {
     question: "G1 SANTA CATARINA",
-    image: <img src={g1Sc.src} alt="Site G1 Santa Catarina" className="w-[60%] h-auto" />,
+    image: <img src={g1Sc.src} alt="Site G1 Santa Catarina" className="w-[45%] pr-6" />,
     answer: 
-      "Trabalhando na NSC Comunicações eu trabalhei em alguns projetos da empresa. Dentre eles o G1 de Santa Catarina onde trabalhava com o time do Rio de Janiero Remotamente no desenvolvimento da versão Web do Portal. \n O trabalho tinha como cotidiano trabalhar com GraphQL, ReactJS e NextJS"
+      "'Trabalhando na NSC Comunicações eu trabalhei em alguns projetos da empresa. Dentre eles o G1 de Santa Catarina onde trabalhava com o time do Rio de Janiero Remotamente no desenvolvimento da versão Web do Portal. \n O trabalho tinha como cotidiano trabalhar com GraphQL, ReactJS e NextJS'",
   },
   {
     question: "How to claim your 25% discount offer?",
-    image: <img src={Nix.src} alt="Site do Nix Gateway de Pagamento" className="w-[60%] h-auto" />,
+    image: <img src={Nix.src} alt="Site do Nix Gateway de Pagamento" className="w-[45%] pr-6" />,
     answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",        
   },
   {
     question: "What's your refund policy?",
-    image: <img src={Rizoluto.src} alt="Site Rizoluto" className="w-[60%] h-auto" />,
+    image: <img src={Rizoluto.src} alt="Site Rizoluto" className="w-[45%] pr-6" />,
     answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",        
   },
   {
     question: "How to get support for the product?",
-    image: <img src={Vigia.src} alt="Site Vigia da Suntech" className="w-[60%] h-auto" />,
+    image: <img src={Vigia.src} alt="Site Vigia da Suntech" className="w-[45%] pr-6" />,
     answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",        
   },
 ];
@@ -42,10 +42,10 @@ export const FAQ = () => (
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
           <p className="mb-7 custom-block-subtitle text-center">
-            Have any questions?
+            Mais projetos
           </p>
           <h2 className="mb-16 custom-block-big-title text-center">
-            Frequently Asked Questions
+            Projetos Participados
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
             {FAQData.map((item, index) => (
@@ -83,9 +83,9 @@ const FAQBox = ({ defaultOpen, title, image, content }) => {
             isOpen ? "max-h-96" : "max-h-0"
           }`}
           >
-          <div className="w-full flex justify-center gap-2">
-            {image}
-            {content}
+          <div className="w-full flex gap-1">
+              {image}
+              {content}
           </div>
         </p>
       </div>

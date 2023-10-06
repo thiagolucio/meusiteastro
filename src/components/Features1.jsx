@@ -54,14 +54,14 @@ export const Features1 = () => {
                 <img
                   src={feature1.src}
                   alt="f1"
-                  className="rounded-lg shadow-sm shadow-gray-950 mx-auto sm:mx-unset"
+                  className="rounded-lg mx-auto sm:mx-unset"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded">
                 <img
                   src={feature2.src}
                   alt="f2"
-                  className="rounded-xl shadow-lg shadow-gray-950 mx-auto sm:mx-unset"
+                  className="rounded-xl mx-auto sm:mx-unset"
                 />
               </div>
             </div>
@@ -70,14 +70,14 @@ export const Features1 = () => {
                 <img
                   src={feature3.src}
                   alt="f3"
-                  className="rounded-xl shadow-lg shadow-gray-950"
+                  className="rounded-xl"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded-lg">
                 <img
                   src={feature4.src}
                   alt="f4"
-                  className="rounded-xl shadow-lg shadow-gray-950"
+                  className="rounded-xl"
                 />
               </div>
             </div>
