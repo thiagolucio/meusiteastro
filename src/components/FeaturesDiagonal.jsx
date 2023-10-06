@@ -50,7 +50,7 @@ export const FeaturesDiagonal = () => {
             {/* https://player.vimeo.com/video/867370170?h=a61e52f745 */}
             {/* https://www.youtube.com/watch?v=AeO_CIEn58c */}
             {/* https://youtu.be/AeO_CIEn58c?si=gmRwfonSJPndZjhO */}
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/AeO_CIEn58c?si=o_HeZFoi_dTd33Ff" title="Short Pitch about me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="600" height="300" className="shadow-lg shadow-black rounded-lg" src="https://www.youtube.com/embed/AeO_CIEn58c?si=o_HeZFoi_dTd33Ff" title="Short Pitch about me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
       </motion.div>

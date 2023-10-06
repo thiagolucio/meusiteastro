@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import semParar from "../assets/images/sem_parar/semPararMensalCompletoLayout01.svg";
-import mySeat from "../assets/images/mySeat/myseat01.png";
-import nscTotal from "../assets/images/nscTotal/nsctotal.jpg";
+import mySeat from "../assets/images/myseat01.png";
+import nscTotal from "../assets/images/nsctotal.jpg";
 
 const projectsData = [
   {

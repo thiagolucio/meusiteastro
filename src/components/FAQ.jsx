@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import g1Sc from "../assets/images/g1sc/g1.svg";
-import Nix from "../assets/images/g1sc/g1.svg";
-import Rizoluto from "../assets/images/g1sc/g1.svg";
-import Vigia from "../assets/images/g1sc/g1.svg";
+import g1Sc from "../assets/images/g1.svg";
+import Nix from "../assets/images/nix.svg";
+import Pauta from "../assets/images/pauta.svg";
+import Vigia from "../assets/images/vigia.svg";
 
 const FAQData = [
   {
@@ -16,17 +16,17 @@ const FAQData = [
   {
     question: "NIX da NEXXERA",
     image: <img src={Nix.src} alt="Site do Nix Gateway de Pagamento" className="w-[45%] pr-6" />,
-    answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
-    url: "https://www.minhanix.com.br/",     
+    answer: <div><p>Projeto marca a fase de minha vida onde comecei a migrar do Webdesign para o Front-end. Foi meu primeiro contato com um Framework na época o AngularJS.</p><p className="mt-3">Isso ocorreu em meados de 2016. Trabalhei com AngularJS, Boostrap, CSS e HTML e posteriormente Angular Material. Jenkins, GitLab, Jira, Sprints, Scrum.</p></div>,
+    url: "https://www.pauta.com.br/",
   },
   {
-    question: "What's your refund policy?",
-    image: <img src={Rizoluto.src} alt="Site Rizoluto" className="w-[45%] pr-6" />,
-    answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+    question: "Pauta Distribuidora",
+    image: <img src={Pauta.src} alt="Site Rizoluto" className="w-[45%] pr-6" />,
+    answer: <div><p>Pauta Distribuidora é um e-commerce que vende equipamentos de tecnologia/ eletrônica para Lojistas, pequenos e médios CNPJ's. Este foi meu último projeto como Webdesigner Sênior.</p><p className="mt-3"> Neste projeto eu era o Webdesigner trabalhando em toda parte de interface do e-commerce junto com outro programador Backend Java que programava JSP. Trabalhava principalmente com HTML, CSS, JQuery, JavaScript e as primeiras versões do Bootstrap e Design.</p><p className="mt-3"> Eventualmente ainda faço trabalhos para eles como freelancer. A versão atual do e-commerce também foi feita por mim com outro Desenvolvedor em Angular8.</p></div>,
     url: "https://www.minhanix.com.br/",    
   },
   {
-    question: "How to get support for the product?",
+    question: "Vigia da Suntech",
     image: <img src={Vigia.src} alt="Site Vigia da Suntech" className="w-[45%] pr-6" />,
     answer: "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
     url: "https://www.minhanix.com.br/",  
@@ -78,7 +78,7 @@ const FAQBox = ({ defaultOpen, title, image, content, url }) => {
       className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8 rounded-3xl bg-customDarkBg3 custom-border-gray-darker mb-4 relative hover:bg-customDarkBg3Hover cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className="flex flex-col p-2  justify-start bg-customDarkBg2">
+      <div className="flex flex-col p-2  justify-start">
         <h3 className="custom-content-title pt-3 sm:pt-0 pr-8 sm:pr-0">
           {title}
         </h3>
