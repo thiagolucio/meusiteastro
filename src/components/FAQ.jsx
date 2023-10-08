@@ -48,7 +48,7 @@ export const FAQ = () => (
             Mais projetos
           </p>
           <h2 className="mb-16 custom-block-big-title text-center">
-            Projetos Participados
+            Projetos que fiz parte
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
             {FAQData.map((item, index) => (

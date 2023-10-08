@@ -1,29 +1,7 @@
-import { FacebookIcon } from "../assets/icons/FacebookIcon";
+import { motion, AnimatePresence } from "framer-motion";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
+import Logo from "../assets/logos/logo.png";
 import { TwitterIcon } from "../assets/icons/TwitterIcon";
-
-const footerData = [
-  {
-    title: "Products",
-    items: ["Services", "About Us", "News and Stories", "Roadmap"],
-  },
-  {
-    title: "Important Links",
-    items: [
-      "Organization Team",
-      "Our Journeys",
-      "Experience/ Education",
-      "Roadmap",
-      "Terms & Conditions",
-      "Privacy Policy",
-    ],
-  },
-  {
-    title: "Company",
-    items: ["About Us", "Jobs", "Press", "Contact Us"],
-  },
-];
 
 export const Footer = () => {
   return (
@@ -34,100 +12,85 @@ export const Footer = () => {
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
               <div className="flex justify-center lg:justify-start items-center grow basis-0">
                 <div className="text-white mr-2 text-6xl">
-                  <TailcastLogo />
+                  <img src={Logo.src} width="30" height="30" alt="Logo" />
                 </div>
-                <div className="text-white font-['Inter'] font-bold text-xl">
-                  Tailcast
+                <div className="mt-3 ml-1">
+                  <span className="title text-white text-4xl">
+                    Thiago Lúcio
+                  </span>
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Dashboard images were made using free Dark Admin dashboard that
-                you can find
-                <a
-                  href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
-                  target="_blank"
-                  className="text-gray-100 ml-1.5 "
-                  aria-label="DarkAdmin"
-                >
-                  here.
-                </a>
+                Conheça as minhas redes profissionais para analisar melhor meu
+                perfil e conhecimento.
               </p>
-              <div className="w-36 mx-auto lg:mx-0">
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <FacebookIcon />
-                </a>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <TwitterIcon />
-                </a>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <InstagramIcon />
-                </a>
+              <div className="w-36 mx-auto lg:mx-0 flex gap-3">
+                  <a
+                    href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
+                    target="_blank"
+                    className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
+                  >
+                    <i className="fa-brands fa-linkedin fa-lg"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
+                    target="_blank"
+                    className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
+                  >
+                    <i className="fa-brands fa-github fa-lg"></i>
+                  </a>
               </div>
             </div>
-            <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
+            {/* <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-white">Products</h3>
                 <ul>
-                  {footerData[0].items.map((item, i) => (
-                    <li key={i} className="mb-4">
-                      <a
-                        className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label=""
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
+                  <li className="mb-4">
+                    <a
+                      className="text-gray-400 hover:text-gray-300"
+                      href="#"
+                      aria-label=""
+                    >
+                      Texto
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-white">
-                  Important Links
+                  <i class="fa-brands fa-linkedin"></i>
                 </h3>
                 <ul>
-                  {footerData[1].items.map((item, i) => (
-                    <li key={i} className="mb-4">
-                      <a
-                        className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label=""
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
+                  <li className="mb-4">
+                    <a
+                      className="text-gray-400 hover:text-gray-300"
+                      href="#"
+                      aria-label=""
+                    >
+                      Texto
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto">
                 <h3 className="mb-6 text-2xl font-bold text-white">Company</h3>
                 <ul>
-                  {footerData[2].items.map((item, i) => (
-                    <li key={i} className="mb-4">
-                      <a
-                        className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label=""
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
+                  <li className="mb-4">
+                    <a
+                      className="text-gray-400 hover:text-gray-300"
+                      href="#"
+                      aria-label=""
+                    >
+                      Texto
+                    </a>
+                  </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
           <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            &copy; 2022. MIT license.
+            &copy; 2023. Esse Site é meu mesmo e eu mesmo que fiz ele usando
+            AstroJS, TailwindCSS, Framer Motion e Font Source.
           </p>
         </div>
       </div>

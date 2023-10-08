@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 
+import Nexxera from "../assets/logos/nexxera.jpg";
+import Pauta from "../assets/logos/pauta.png";
+import Compaq from "../assets/logos/compaq.svg";
+import Primesys from "../assets/logos/primesys.svg";
+
 export const Brands = () => (
   <section className="py-12 sm:py-24 bg-customDarkBg1 w-full mt-16 mb-16">
     <motion.div
@@ -13,35 +18,29 @@ export const Brands = () => (
           <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
             <div className="flex flex-col">
               <h2 className="mb-2  text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-white">
-                Com o que mais
+                Empresas
               </h2>
               <h2 className=" text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-customSecondary">
-                trabalho no meu dia
+                por onde passei
               </h2>
             </div>
           </div>
-          <div className="w-2/3 sm:w-[620px] lg:w-1/2 mx-auto lg:mx-0 lg:pl-10">
-            <div className="flex flex-wrap -m-4">
-              <div className="w-1/3 sm:w-1/3 py-6 text-center">
-                 HTML5
+          <div className="w-3/3 sm:w-[620px] lg:w-3/3 mx-auto lg:mx-0 lg:pl-10">
+            <div className="flex flex-wrap -m-4 gap-16">
+              {/* <div className="w-1/3 sm:w-1/3 py-6 text-center">
+                <div className=badge-base LI-profile-badge shadow-xlg shadow-customDarkBg1" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="thiago-lucio-bittencourt-b0452825" data-version="v1"><a className=badge-base__link LI-simple-link" href="https://br.linkedin.com/in/thiago-lucio-bittencourt-b0452825?trk=profile-badge"></a></div>
+              </div> */}
+              <div className="w-1/3 sm:w-1/3 py-4 text-center bg-white rounded-xl flex justify-center items-center">
+                <img src={Nexxera.src} alt="Nexxera Logo" className="w-[130px] h-[35px]"/>
               </div>
-              <div className="w-1/3 sm:w-1/3 py-6 flex  justify-center">
-                CSS3/ SCSS
+              <div className="w-1/3 sm:w-1/3 py-4 text-center bg-white rounded-xl flex justify-center items-center">
+                <img src={Pauta.src} alt="Pauta Logo" className="w-[130px] h-[45px]"/>
               </div>
-              <div className="w-1/3 sm:w-1/3 py-6 flex justify-center">
-               JavaScript
+              <div className="w-1/3 sm:w-1/3 py-4 text-center bg-white rounded-xl flex justify-center items-center">
+                <img src={Compaq.src} alt="Compaq Logo" className="w-[130px] h-[45px]"/>
               </div>
-              <div className="w-1/3 sm:w-1/3 py-6 flex justify-center">
-                TypeScript
-              </div>
-              <div className="w-1/3 sm:w-1/3 py-6 flex justify-center">
-                UX
-              </div>
-              <div className="w-1/3 sm:w-1/3  py-6 flex  justify-center">
-                UI
-              </div>
-              <div className="w-1/3 sm:w-1/3  py-6 flex  justify-center">
-                NodeJS
+              <div className="w-1/3 sm:w-1/3 py-4 text-center bg-white rounded-xl flex justify-center items-center">
+                <img src={Primesys.src} alt="Primesys Logo" className="w-[130px] h-[45px]"/>
               </div>
             </div>
           </div>
