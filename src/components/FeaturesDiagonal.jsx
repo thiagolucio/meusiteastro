@@ -7,7 +7,7 @@ export const FeaturesDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1">
+    <section className="w-screen flex flex-col justify-center items-center">
       <div className="w-full custom-shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
@@ -28,7 +28,7 @@ export const FeaturesDiagonal = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+        <div className="w-screen flex justify-center bg-customDarkBg1 p-16 mx-auto lg:flex-row flex-col lg:pt-24 lg:pb-20">
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
               pitch profissional em vídeo
@@ -37,7 +37,9 @@ export const FeaturesDiagonal = () => {
               Um pouco sobre mim
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
-              Pitch Profissional em vídeo onde me apresento de forma resumida. Você também poderá verificar meu Inglês pois a apresentação está em Inglês.
+              Pitch Profissional em vídeo onde me apresento de forma resumida.
+              Você também poderá verificar meu Inglês pois a apresentação está
+              em Inglês.
             </p>
             <div
               className="w-[210px] h-12 custom-button-colored mr-10 "
@@ -50,7 +52,14 @@ export const FeaturesDiagonal = () => {
             {/* https://player.vimeo.com/video/867370170?h=a61e52f745 */}
             {/* https://www.youtube.com/watch?v=AeO_CIEn58c */}
             {/* https://youtu.be/AeO_CIEn58c?si=gmRwfonSJPndZjhO */}
-            <iframe width="600" height="300" className="shadow-lg shadow-black rounded-lg" src="https://www.youtube.com/embed/AeO_CIEn58c?si=o_HeZFoi_dTd33Ff" title="Short Pitch about me" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            <iframe
+              width="600"
+              height="300"
+              className="shadow-lg shadow-black rounded-lg"
+              src="https://www.youtube.com/embed/AeO_CIEn58c?si=o_HeZFoi_dTd33Ff"
+              title="Short Pitch about me"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
           </div>
         </div>
       </motion.div>
@@ -69,7 +78,11 @@ export const FeaturesDiagonal = () => {
         </svg>
       </div>
       {isModalOpen && (
-        <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} isCvEnd />
+        <InvitationModal
+          isOpen={isModalOpen}
+          setIsOpen={setIsModalOpen}
+          isCvEnd
+        />
       )}
     </section>
   );

@@ -27,13 +27,13 @@ const projectsData = [
       "Filial da Rede Globo de Televisão em Santa Catarina trabalhei na NSC Comunicações como Desenvolvedor Front-end UX/ UI. Tive a oportunidade de trabalhar em projetos como G1 de Santa Catarina, NSC Total e outros, lidando com Front-end mas também com o Back-end e DevOps.",
     image: nscTotal,
     url: "https://nsccomunicacao.com.br/",
-  }, 
+  },
 ];
 
 export const Projects = () => (
-  <section className="w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-customDarkBg2 relative">
-  <div className="absolute -top-16" id="feedback" />
-  <div className="flex flex-col w-full lg:w-[1150px] justify-center">
+  <section className="w-full xs:w-full sm:w-full min-w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-customDarkBg2 relative">
+    <div className="absolute top-16" id="feedback" />
+    <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -78,7 +78,8 @@ export const Projects = () => (
                   href={project.url}
                   className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
                 >
-                  <i className="fa-solid fa-link mr-1 fa-lg"></i> Conheça o projeto
+                  <i className="fa-solid fa-link mr-1 fa-lg"></i> Conheça o
+                  projeto
                 </a>
               </div>
             </div>

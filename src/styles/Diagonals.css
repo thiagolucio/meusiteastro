@@ -11,16 +11,9 @@
   width: calc(100% + 1.3px);
   height: 200px;
 }
-.hero-title-gradient {
-  background: -webkit-linear-gradient(white, #b4add1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* Features Top */
-
 .custom-shape-divider-bottom-1665696614 {
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
