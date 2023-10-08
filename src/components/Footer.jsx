@@ -1,7 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { InstagramIcon } from "../assets/icons/InstagramIcon";
 import Logo from "../assets/logos/logo.png";
-import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 export const Footer = () => {
   return (
@@ -29,15 +26,25 @@ export const Footer = () => {
                     href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
                     target="_blank"
                     className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
+                    title="Meu Linkedin"
                   >
                     <i className="fa-brands fa-linkedin fa-lg"></i>
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
+                    href="https://github.com/thiagolucio/"
                     target="_blank"
                     className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
+                    title="Github com vários projetos pessoais e alguns profissionais"
                   >
                     <i className="fa-brands fa-github fa-lg"></i>
+                  </a>
+                  <a
+                    href="https://www.behance.net/thiagolucio/"
+                    target="_blank"
+                    className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
+                    title="Behance - Trabalhos antigos"
+                  >
+                    <i class="fa-brands fa-square-behance fa-lg"></i>
                   </a>
               </div>
             </div>

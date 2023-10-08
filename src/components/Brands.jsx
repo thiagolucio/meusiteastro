@@ -20,7 +20,7 @@ export const Brands = () => (
               <h2 className="mb-2  text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-white">
                 Empresas
               </h2>
-              <h2 className=" text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-customSecondary">
+              <h2 className="text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-customSecondary">
                 por onde passei
               </h2>
             </div>

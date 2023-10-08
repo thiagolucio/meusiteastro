@@ -4,7 +4,8 @@ import { useState } from "react";
 import { InvitationModal } from "./InvitationModal";
 
 export const FeaturesDiagonal = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpenEn, setIsModalOpenEn] = useState(false);
+  const [isModalOpenPt, setIsModalOpenPt] = useState(false);
 
   return (
     <section className="w-screen flex flex-col justify-center items-center">
@@ -28,8 +29,8 @@ export const FeaturesDiagonal = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="w-screen flex justify-center bg-customDarkBg1 p-16 mx-auto lg:flex-row flex-col lg:pt-24 lg:pb-20">
-          <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
+        <div className="w-screen  flex flex-col lg:flex-row justify-center mx-auto p-16 bg-customDarkBg1">
+          <div className="flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
               pitch profissional em vídeo
             </span>
@@ -41,12 +42,20 @@ export const FeaturesDiagonal = () => {
               Você também poderá verificar meu Inglês pois a apresentação está
               em Inglês.
             </p>
-            <div
-              className="w-[210px] h-12 custom-button-colored mr-10 "
-              onClick={() => setIsModalOpen(true)}
-            >
-              Download CV
-            </div>
+              <div className="w-full flex flex-col gap-2 sm:flex-row justify-start">
+                <div
+                  className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
+                  onClick={() => setIsModalOpenEn(true)}
+                >
+                  CV em Inglês
+                </div>
+                <div
+                  className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
+                  onClick={() => setIsModalOpenPt(true)}
+                >
+                  CV em Português
+                </div>
+              </div>
           </div>
           <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
             {/* https://player.vimeo.com/video/867370170?h=a61e52f745 */}
@@ -77,12 +86,11 @@ export const FeaturesDiagonal = () => {
           ></path>
         </svg>
       </div>
-      {isModalOpen && (
-        <InvitationModal
-          isOpen={isModalOpen}
-          setIsOpen={setIsModalOpen}
-          isCvEnd
-        />
+      {isModalOpenEn && (
+        <InvitationModal isOpen={isModalOpenEn} setIsOpen={setIsModalOpenEn} isCvEnd />
+      )}      
+      {isModalOpenPt && (
+        <InvitationModal isOpen={isModalOpenPt} setIsOpen={setIsModalOpenPt} isCvEnd={false} />
       )}
     </section>
   );
