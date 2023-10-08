@@ -32,8 +32,8 @@ const projectsData = [
 
 export const Projects = () => (
   <section className="w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-customDarkBg2 relative">
-    <div className="absolute -top-16" id="feedback" />
-    <div className="flex flex-col w-full lg:w-[1150px] justify-center">
+  <div className="absolute -top-16" id="feedback" />
+  <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -50,7 +50,7 @@ export const Projects = () => (
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
           {projectsData.map((project, index) => (
             <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-2/3 custom-border-gray-800 rounded-xl bg-customDarkBg1 flex flex-col px-6 py-4"
+              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4"
               key={`${project.projectName}-${index}`}
             >
               <div className="mt-4 mb-2 xl:mt-8 xl:mb-4">

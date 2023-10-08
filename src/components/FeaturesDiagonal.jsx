@@ -8,7 +8,7 @@ export const FeaturesDiagonal = () => {
 
   return (
     <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1">
-      <div className="custom-shape-divider-bottom-1665696614">
+      <div className="w-full custom-shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
