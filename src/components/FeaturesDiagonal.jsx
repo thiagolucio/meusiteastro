@@ -57,7 +57,7 @@ export const FeaturesDiagonal = () => {
                 </div>
               </div>
           </div>
-          <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-end mx-auto pt-16 lg:pt-0">
+          <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center lg:justify-end mx-auto pt-16 lg:pt-0">
             {/* https://player.vimeo.com/video/867370170?h=a61e52f745 */}
             {/* https://www.youtube.com/watch?v=AeO_CIEn58c */}
             {/* https://youtu.be/AeO_CIEn58c?si=gmRwfonSJPndZjhO */}
