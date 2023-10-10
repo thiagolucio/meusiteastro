@@ -50,7 +50,7 @@ export const FAQ = () => (
           <h2 className="mb-16 custom-block-big-title text-center">
             Projetos que fiz parte
           </h2>
-          <div className="mb-11 flex flex-wrap -m-1">
+          <div className="mb-11 flex flex-wrap m-1">
             {FAQData.map((item, index) => (
               <div className="w-full p-1">
                 <FAQBox
@@ -83,10 +83,7 @@ const FAQBox = ({ defaultOpen, title, image, content, url }) => {
           {title}
         </h3>
         <div
-          className={`text-gray-300 text-sm pt-4 transition-all duration-300 overflow-hidden flex-col ${
-            isOpen ? "max-h-96" : "max-h-0"
-          }`}
-          >
+          className={`text-gray-300 text-sm pt-4 transition-all duration-300 overflow-hidden flex-col ${isOpen ? "max-h-96" : "max-h-0"}`}>
           <div className="w-full flex">
             {image}
             <div className="flex-col">
@@ -103,9 +100,7 @@ const FAQBox = ({ defaultOpen, title, image, content, url }) => {
           viewBox="0 0 20 20"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={`transition-all duration-500  ${
-            isOpen ? "rotate-[180deg]" : "rotate-[270deg]"
-          }`}
+          className={`transition-all duration-500  ${isOpen ? "rotate-[180deg]" : "rotate-[270deg]"}`}
         >
           <path
             d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"

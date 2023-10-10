@@ -20,7 +20,6 @@
     "@fontsource/seaweed-script": "^5.0.14",
     "@fontsource/smooch": "^5.0.14",
     "astro": "^3.2.2",
-    "astro-i18next": "^1.0.0-beta.21",
     "astro-lazy-youtube-embed": "^0.2.0",
     "framer-motion": "^10.16.4",
     "npm-check-updates": "^16.14.5",

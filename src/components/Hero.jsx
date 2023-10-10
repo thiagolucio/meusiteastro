@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-
 import { InvitationModal } from "./InvitationModal";
 import HeroImage from "../assets/images/hero-img.jpg";
 
@@ -41,11 +40,11 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-            Using technologies based on Front-end Stacks such as HTML, CSS, JavaScript, TypeScript. 
-            Working on projects in Web and Mobile applications. 
-            Implementing Interaction Design concepts in the intuitive construction of interfaces with 
-            UX and UI concepts.
+          <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48">
+                Using technologies based on Front-end Stacks such as HTML, CSS, JavaScript, TypeScript. 
+                Working on projects in Web and Mobile applications. 
+                Implementing Interaction Design concepts in the intuitive construction of interfaces with 
+                UX and UI concepts.
           </div>
         </motion.div>
         <motion.div

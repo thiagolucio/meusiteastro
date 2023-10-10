@@ -67,7 +67,7 @@ export const FeaturesDiagonal = () => {
               className="shadow-lg shadow-black rounded-lg"
               src="https://www.youtube.com/embed/AeO_CIEn58c?si=o_HeZFoi_dTd33Ff"
               title="Short Pitch about me"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
             ></iframe>
           </div>
         </div>

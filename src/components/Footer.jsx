@@ -44,56 +44,58 @@ export const Footer = () => {
                     className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
                     title="Behance - Trabalhos antigos"
                   >
-                    <i class="fa-brands fa-square-behance fa-lg"></i>
+                    <i className="fa-brands fa-square-behance fa-lg"></i>
                   </a>
               </div>
             </div>
-            {/* <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
+            <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold text-white">Products</h3>
+                {/* <h3 className="mb-6 text-2xl font-bold text-white">Products</h3> */}
                 <ul>
                   <li className="mb-4">
-                    <a
+                    {/* <a
                       className="text-gray-400 hover:text-gray-300"
                       href="#"
                       aria-label=""
                     >
                       Texto
-                    </a>
+                    </a> */}
                   </li>
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-white">
-                  <i class="fa-brands fa-linkedin"></i>
+                  {/* <i className="fa-brands fa-linkedin"></i> */}
                 </h3>
                 <ul>
                   <li className="mb-4">
-                    <a
+                    {/* <a
                       className="text-gray-400 hover:text-gray-300"
                       href="#"
                       aria-label=""
                     >
                       Texto
-                    </a>
+                    </a> */}
                   </li>
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto">
-                <h3 className="mb-6 text-2xl font-bold text-white">Company</h3>
+                <h3 className="mb-6 text-2xl font-bold text-white">Behance</h3>
                 <ul>
                   <li className="mb-4">
                     <a
                       className="text-gray-400 hover:text-gray-300"
-                      href="#"
-                      aria-label=""
+                      href="https://www.behance.net/thiagolucio/"
+                      target="_black"
+                      aria-label="Behance"
                     >
-                      Texto
+                      <p>Em meu Behance você poderá ver bastante trabalhos que realizei como Front-end</p> 
+                       no passado e Sites que fiz quando trabalhava como Webdesigner.
                     </a>
                   </li>
                 </ul>
               </div>
-            </div> */}
+            </div>
           </div>
           <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
             &copy; 2023. Esse Site é meu mesmo e eu mesmo que fiz ele usando

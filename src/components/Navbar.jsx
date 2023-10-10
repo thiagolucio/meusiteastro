@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
 // import Logo from "../assets/logos/logo.png";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
@@ -81,7 +80,7 @@ export const Navbar = () => {
               className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
               title="Behance - Trabalhos antigos"
             >
-              <i class="fa-brands fa-square-behance fa-lg"></i>
+              <i className="fa-brands fa-square-behance fa-lg"></i>
             </a>
           </div>
         </motion.div>
