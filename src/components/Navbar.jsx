@@ -69,7 +69,7 @@ export const Navbar = () => {
                 <i className="fa-brands fa-linkedin fa-lg"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/thiago-lucio-bittencourt-b0452825/"
+              href="https://github.com/thiagolucio/"
               target="_blank"
               className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
             >

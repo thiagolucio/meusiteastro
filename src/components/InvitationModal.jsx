@@ -110,7 +110,7 @@ export const InvitationModal = ({ setIsOpen, isCvEnd }) => (
                   <a
                     className="py-4 px-6 w-full text-white text-center font-semibold rounded-xl shadow-4xl hover:cursor-pointer focus:ring focus:ring-indigo-300 bg-customPrimary hover:bg-[#7274f3] transition ease-in-out duration-200"
                     type="button"
-                    href="https://thiagolucio.com.br/cv/pt/cv_design-pt.pdf"
+                    href="https://thiagolucio.com.br/cv/pt/cv-thiagolucio-pt.docx"
                     target="_blank"
                   >
                     CV Texto simnples
