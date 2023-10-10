@@ -75,6 +75,14 @@ export const Navbar = () => {
             >
               <i className="fa-brands fa-github fa-lg"></i>
             </a>
+            <a
+              href="https://www.behance.net/thiagolucio/"
+              target="_blank"
+              className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
+              title="Behance - Trabalhos antigos"
+            >
+              <i class="fa-brands fa-square-behance fa-lg"></i>
+            </a>
           </div>
         </motion.div>
         <div
