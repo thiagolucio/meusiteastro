@@ -78,9 +78,7 @@ export const Projects = () => (
                   href={project.url}
                   className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
                 >
-                  <i className="fa-solid fa-link mr-1 fa-lg"></i> Conheça o
-                  projeto
-                </a>
+                  <i className="fa-solid fa-link mr-1 fa-lg"></i> Conheça o projeto</a>
               </div>
             </div>
           ))}
