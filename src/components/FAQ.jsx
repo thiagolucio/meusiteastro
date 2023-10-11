@@ -9,25 +9,25 @@ import Risoluto from "../assets/images/risoluto.svg";
 const FAQData = [
   {
     question: "G1 SANTA CATARINA",
-    image: <img src={g1Sc.src} alt="Site G1 Santa Catarina" className="w-[45%] mr-6 rounded-xl" />,
+    image: <img src={g1Sc.src} alt="Site G1 Santa Catarina" className="w-[45%] mr-6 rounded-xl hidden xs:hidden sm:hidden md:hidden lg:block xl:block xll:block 2xl:block m-2" />,
     answer: <div><p>Dentre os projetos que trabalhei na NSC Comunicações. Destaca-se o Portal G1 de Santa Catarina onde trabalhei como Dev Front-end junto com o time no Rio de Janeiro.</p><p className="mt-3"> O cotidiano das atividades era lidar com as tasks diárias do Jira e fazer reuniões diárias. Trabalhei com projetos React ou NextJS como Front-end e 100% remoto.</p><p className="mt-3"> Com Backend lidando com recursos NestJS, GraphQL, NodeJS, PosgreSQL de forma superficial. Importante reforçar que eu não trabalhei em projetos Mobile com React Native. Somente WebApp e PWA.</p></div>,
     url: <a href="https://g1.globo.com/sc/santa-catarina/" target="_blank" className="inline-block text-center px-4 rounded-xl custom-button-colored font-bold leading-loose mt-4 py-2"><i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>Conheça o projeto</a>,
   },
   {
     question: "NIX da NEXXERA",
-    image: <img src={Nix.src} alt="Site do Nix Gateway de Pagamento" className="w-[45%] pr-6" />,
+    image: <img src={Nix.src} alt="Site do Nix Gateway de Pagamento" className="w-[45%] pr-6 hidden xs:hidden sm:hidden md:hidden lg:block xl:block xll:block 2xl:block m-2" />,
     answer: <div><p>Projeto marca a fase de minha vida onde comecei a migrar do Webdesign para o Front-end. Foi meu primeiro contato com um Framework na época o AngularJS.</p><p className="mt-3">Isso ocorreu em meados de 2016. Trabalhei com AngularJS, Boostrap, CSS e HTML e posteriormente Angular Material. Jenkins, GitLab, Jira, Sprints, Scrum.</p></div>,
     url: <a href="https://www.pauta.com.br/" target="_blank" className="inline-block text-center px-4 rounded-xl custom-button-colored font-bold leading-loose mt-4 py-2"><i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>Conheça o projeto</a>,
   },
   {
     question: "Pauta Distribuidora",
-    image: <img src={Pauta.src} alt="Site Rizoluto" className="w-[45%] pr-6" />,
+    image: <img src={Pauta.src} alt="Site Rizoluto" className="w-[45%] pr-6 hidden xs:hidden sm:hidden md:hidden lg:block xl:block xll:block 2xl:block m-2" />,
     answer: <div><p>Pauta Distribuidora é um e-commerce que vende equipamentos de tecnologia/ eletrônica para Lojistas, pequenos e médios CNPJ's. Este foi meu último projeto como Webdesigner Sênior.</p><p className="mt-3"> Neste projeto eu era o Webdesigner trabalhando em toda parte de interface do e-commerce junto com outro programador Backend Java que programava JSP. Trabalhava principalmente com HTML, CSS, JQuery, JavaScript e as primeiras versões do Bootstrap e Design.</p><p className="mt-3"> Eventualmente ainda faço trabalhos para eles como freelancer. A versão atual do e-commerce também foi feita por mim com outro Desenvolvedor em Angular8.</p></div>,
     url: <a href="https://www.minhanix.com.br/" target="_blank" className="inline-block text-center px-4 rounded-xl custom-button-colored font-bold leading-loose mt-4 py-2"><i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>Conheça o projeto</a>,
   },
   {
     question: "Risoluto",
-    image: <img src={Risoluto.src} alt="Site Risoluto" className="w-[45%] pr-6" />,
+    image: <img src={Risoluto.src} alt="Site Risoluto" className="w-[45%] pr-6 hidden xs:hidden sm:hidden md:hidden lg:block xl:block xll:block 2xl:block m-2" />,
     answer: <div><p>Risoluto é o produto de uma das empresas que passei e a minha experiência ali foi um contato maior com AngularJS em projetos do Banco de Fomento do Estado de SC e também Angular8 com a versão Web do Sistema de Gestão de Pessoas.</p><p className="mt-3"> Técnicamente falando sobre projeto eu trabalhei basicamente lidando com as interfaces em um volume de serviço bem acelerado. Foi um desafio grande e um bom local para definir próximos passos da carreira. A direção que estou indo até hoje. HTML, CSS, JQUERY, Bootstrap, AngularJS, Angular8, Angular Material e afins era o foco do meu trabalho ali.</p></div>,
     url: <a href="https://risoluto.com.br/" target="_blank" className="inline-block text-center px-4 rounded-xl custom-button-colored font-bold leading-loose mt-4 py-2"><i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>Conheça o projeto</a>,
   },

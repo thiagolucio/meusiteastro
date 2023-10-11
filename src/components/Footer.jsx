@@ -1,4 +1,5 @@
 import Logo from "../assets/logos/logo.png";
+import Behance from "../assets/images/behance.svg";
 
 export const Footer = () => {
   return (
@@ -79,8 +80,8 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full md:w-1/3 lg:w-auto">
-                <h3 className="mb-6 text-2xl font-bold text-white">Behance</h3>
+              <div className="w-[500px]">
+                <h3 className="mb-6 text-2xl font-bold text-white"><i class="fa-brands fa-square-behance fa-lg"></i> Behance</h3>
                 <ul>
                   <li className="mb-4">
                     <a
@@ -89,8 +90,9 @@ export const Footer = () => {
                       target="_black"
                       aria-label="Behance"
                     >
-                      <p>Em meu Behance você poderá ver bastante trabalhos que realizei como Front-end</p> 
+                      Em meu Behance você poderá ver trabalhos que realizei como Front-end
                        no passado e Sites que fiz quando trabalhava como Webdesigner.
+                      <img src={Behance.src} className="w-auto h-[300px] mt-3 shadow-lg shadow-black" alt="Behance" />
                     </a>
                   </li>
                 </ul>

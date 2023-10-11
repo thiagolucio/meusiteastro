@@ -80,7 +80,7 @@ export const Navbar = () => {
               className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
               title="Behance - Trabalhos antigos"
             >
-              <i className="fa-brands fa-square-behance fa-lg"></i>
+              <i class="fa-brands fa-square-behance fa-lg"></i>
             </a>
           </div>
         </motion.div>
@@ -115,10 +115,12 @@ export const Navbar = () => {
                 </a>
               ))}
               <a
-                className="text-white rounded-xl bg-customDarkBg2 hover:bg-customDarkBg3 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                className="text-white custom-border-gray rounded-xl
+                bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                href="https://github.com/matt765/Tidestream"
                 target="_blank"
               >
-                <i className="fa-brands fa-linkedin my-auto mr-2 fa-lg"></i>
+                <i className="fa-brands fa-linkedin my-auto mr-2 fa-xl"></i>
                 Linkedin
               </a>
               <a
@@ -127,8 +129,17 @@ export const Navbar = () => {
                 href="https://github.com/matt765/Tidestream"
                 target="_blank"
               >
-                <GithubIcon />
+                <i class="fa-brands fa-github my-auto mr-2 fa-xl"></i>
                 Github
+              </a>
+              <a
+                className="text-white custom-border-gray rounded-xl
+                bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                href="https://github.com/matt765/Tidestream"
+                target="_blank"
+              >
+            <i class="fa-brands fa-behance my-auto mr-2 fa-xl"></i>
+                Behance
               </a>
             </div>
           </motion.div>
