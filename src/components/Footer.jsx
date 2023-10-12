@@ -19,8 +19,7 @@ export const Footer = () => {
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Conheça as minhas redes profissionais para analisar melhor meu
-                perfil e conhecimento.
+                Get to know my professional networks to better analyze my profile and knowledge.
               </p>
               <div className="w-36 mx-auto lg:mx-0 flex gap-3">
                   <a
@@ -81,7 +80,7 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className="w-[500px]">
-                <h3 className="mb-6 text-2xl font-bold text-white"><i class="fa-brands fa-square-behance fa-lg"></i> Behance</h3>
+                <h3 className="mb-6 text-2xl font-bold text-white"><i className="fa-brands fa-square-behance fa-lg"></i> Behance</h3>
                 <ul>
                   <li className="mb-4">
                     <a
@@ -90,8 +89,7 @@ export const Footer = () => {
                       target="_black"
                       aria-label="Behance"
                     >
-                      Em meu Behance você poderá ver trabalhos que realizei como Front-end
-                       no passado e Sites que fiz quando trabalhava como Webdesigner.
+                      On my Behance, you can see work I did as a Front-end in the past and Sites I created when I worked as a Web designer.
                       <img src={Behance.src} className="w-auto h-[300px] mt-3 shadow-lg shadow-black" alt="Behance" />
                     </a>
                   </li>
@@ -100,8 +98,7 @@ export const Footer = () => {
             </div>
           </div>
           <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            &copy; 2023. Esse Site é meu mesmo e eu mesmo que fiz ele usando
-            AstroJS, TailwindCSS, Framer Motion e Font Source.
+            &copy; 2023. This website is mine and I created it using AstroJS, TailwindCSS, Framer Motion e Font Source.
           </p>
         </div>
       </div>

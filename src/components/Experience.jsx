@@ -9,6 +9,17 @@ import LogoUnisul from "../assets/images/unisul-logo.jpeg";
 import LogoNsc from "../assets/images/logonsctv.jpeg";
 import LogoUnivali from "../assets/images/univali-logo.jpg";
 
+import {Language} from "./Language";
+
+const caras = Language;
+// const dentros = {...caras};
+
+// const boelano = dentros.isEnglish;
+console.log(caras.props);
+// console.log(boelano);
+// console.log(typeof(Language.isEnglish));
+
+
 const sysMapData = [
   "Metodologias Ágeis",
   "Analise UX/ UI",
@@ -114,12 +125,11 @@ export const Experience = () => {
                         Remoto - Maio/2022 - Agora
                       </div>
                     </div>
-
                     <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm">
-                      Sócio co-participativo trabalhando junto aos projetos de
-                      clientes da empresa junto aos times de Design System,
-                      criando a Biblioteca de componentes para aplicações Web e
-                      Mobile
+                        Sócio co-participativo trabalhando junto aos projetos de
+                        clientes da empresa junto aos times de Design System,
+                        criando a Biblioteca de componentes para aplicações Web e
+                        Mobile
                     </p>
                     <ul className="mb-2 2xl:mb-6 text-white">
                       {sysMapData.map((text, index) => (

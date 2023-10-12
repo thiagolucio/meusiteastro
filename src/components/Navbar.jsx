@@ -1,27 +1,17 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import Logo from "../assets/logos/logo.png";
-import EnglishFlag from "../assets/icons/english_flag.png";
-import BrasilFlag from "../assets/icons/brasil_flag.png";
-
-
-
+// import { Language } from "./Language";
 
 const navbarLinks = [
-  { label: "Inicio", href: "#home", ariaLabel: "Inicio" },
+  { label: "Start", href: "#home", ariaLabel: "Start" },
   { label: "ProFit", href: "#features", ariaLabel: "ProFit" },
-  { label: "XP e Educação", href: "#experience", ariaLabel: "XP e Educação" },
-  { label: "Projetos", href: "#feedback", ariaLabel: "Projetos" },
+  { label: "XP & Education", href: "#experience", ariaLabel: "XP & Education" },
+  { label: "Projects", href: "#feedback", ariaLabel: "Projects" },
   // { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
 ];
 
 export const Navbar = () => {
-  const [isEnglish, setIsEnglish] = useState(true);
-
-  const handleChange = () => {
-    setIsEnglish(!isEnglish);
-  };
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -90,45 +80,9 @@ export const Navbar = () => {
               className="w-10 h-10 rounded-full font-bold text-white border border-solid flex justify-center items-center cursor-pointer  bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
               title="Behance - Trabalhos antigos"
             >
-              <i class="fa-brands fa-square-behance fa-lg"></i>
+              <i className="fa-brands fa-square-behance fa-lg"></i>
             </a>
-            <label className="mx-auto relative flex justify-between items-center place-items-center group text-xl w-[50px] h-10 rounded-full pr-36 pl-1 cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="peer appearance-none"
-                  checked={!isEnglish}
-                  onChange={handleChange}
-                />
-                <span className="
-                  h-10
-                  after:h-10
-                  w-[4.5rem]
-                  after:w-[4.5rem]
-                  flex 
-                  items-center 
-                  place-items-center 
-                  mx-auto 
-                  after:rounded-full
-                  duration-300 
-                  ease-in-out 
-                  after:bg-customPrimary 
-                  after:shadow-md 
-                  after:duration-300 
-                  peer-checked:after:translate-x-[5.5rem]
-                  cursor-pointer"></span>
-                <div className="w-full absolute flex items-center place-items-center text-white text-sm">
-                  <div className={isEnglish ? "flex mx-auto items-center place-items-center ml-2" : "flex mx-auto items-center place-items-center ml-2"}>
-                    <img src={EnglishFlag.src} className="w-[36px] h-[36px]" />
-                    <span>EN</span>
-                  </div>
-                  <div className={isEnglish}>
-                    <div className="flex items-center place-items-center">
-                      <img src={BrasilFlag.src} className="w-[36px] h-[36px]" />
-                      <span>PT</span>
-                    </div>
-                  </div>
-                </div>
-              </label>
+              {/* <Language/> */}
           </div>
         </motion.div>
         <div
@@ -176,7 +130,7 @@ export const Navbar = () => {
                 href="https://github.com/matt765/Tidestream"
                 target="_blank"
               >
-                <i class="fa-brands fa-github my-auto mr-2 fa-xl"></i>
+                <i className="fa-brands fa-github my-auto mr-2 fa-xl"></i>
                 Github
               </a>
               <a
@@ -185,7 +139,7 @@ export const Navbar = () => {
                 href="https://github.com/matt765/Tidestream"
                 target="_blank"
               >
-            <i class="fa-brands fa-behance my-auto mr-2 fa-xl"></i>
+            <i className="fa-brands fa-behance my-auto mr-2 fa-xl"></i>
                 Behance
               </a>
             </div>
