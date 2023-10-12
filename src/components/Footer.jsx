@@ -19,7 +19,7 @@ export const Footer = () => {
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Get to know my professional networks to better analyze my profile and knowledge.
+                Get to `know my professional networks to better analyze my profile and knowledge.
               </p>
               <div className="w-36 mx-auto lg:mx-0 flex gap-3">
                   <a
