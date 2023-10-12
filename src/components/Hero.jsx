@@ -40,7 +40,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48">
+          <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 text-justify">
                 Using technologies based on Front-end Stacks such as HTML, CSS, JavaScript, TypeScript. 
                 Working on projects in Web and Mobile applications. 
                 Implementing Interaction Design concepts in the intuitive construction of interfaces with 

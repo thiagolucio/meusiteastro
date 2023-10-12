@@ -36,13 +36,13 @@ export const Features2 = () => (
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
             <span className="custom-block-subtitle">
-              Resumo rápido
+              fast resume
             </span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              De Webdesigner para o<span className="text-customPrimary"> Front-end</span>
+              Old Web designer to<span className="text-customPrimary"> Front-end</span>
             </h2>
             <p className="mb-12 text-gray-200 leading-loose text-justify">
-              Eu sou o antigo Webdesigner(2002) que em meados de 2016 começou a migrar naturalmente para o Front-end. Aos poucos estou evoluindo no Desenvolvimento de Sistemas web e mobile.
+              I'm a former Web designer (2002) who in mid-2016 began to naturally migrate to front-end development. Little by little I'm evolving in the Development of web and mobile Systems.
               <br />
               Stacks principais:
             </p>           
@@ -57,11 +57,11 @@ export const Features2 = () => (
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>JavaScript & TypeScript</span>
+                <span>JavaScript, TypeScript, Frameworks, Libraries</span>
               </li>           
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Design de Interação (UX e UI)</span>
+                <span>Interaction Design (UX & UI)</span>
               </li>
             </ul>
           </div>

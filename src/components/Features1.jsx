@@ -23,27 +23,23 @@ export const Features1 = () => {
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="custom-block-subtitle">Professional Fit</span>
               <h2 className="mt-6 mb-8 text-2xl custom-block-big-title">
-                Todo ciclo <span className="text-customPrimary">Front-end</span>
+                All <span className="text-customPrimary">Front-end</span> cycle
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Trabalhando por toda a esteira do ciclo de Front-end. Trabalhando desde a análise do processo de interação com o usuário, criando protótipos, codificando e implementando projetos web ou mobile.
-                {/* Working across the entire Frontend cycle mat from UX/UI analysis and interaction creation, prototyping, coding and implementation of web or mobile projects. */}
+                Working across the entire Frontend cycle mat from UX/UI analysis and interaction creation, prototyping, coding and implementation of web or mobile projects.
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Design de Interação usando UX/ UI</span>
-                  {/* <span>UX and UI and Interaction Design</span> */}
+                  <span>Interaction Design using UX and UI</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Prototipando e Sessionando para o Frontend</span>
-                  {/* <span>Prototyping and Wireframing</span> */}
+                  <span>Prototyping and Wireframing</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Implementando com o time de Front-end usando frameworks/ bibliotecas ou afins.</span>
-                  {/* <span>Coding Frontend using Frameworks, Libraries or "hands on".</span> */}
+                  <span>Coding Frontend using Frameworks, Libraries or "hands on".</span>
                 </li>
               </ul>
             </div>
