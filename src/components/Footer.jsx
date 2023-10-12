@@ -79,18 +79,18 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-[500px]">
+              <div className="w-[500px] text-right justify-end content-end">
                 <h3 className="mb-6 text-2xl font-bold text-white"><i className="fa-brands fa-square-behance fa-lg"></i> Behance</h3>
                 <ul>
-                  <li className="mb-4">
+                  <li className="mb-4 w-full flex justify-end content-end float-righ">
                     <a
-                      className="text-gray-400 hover:text-gray-300"
+                      className="text-gray-400 hover:text-blue-500"
                       href="https://www.behance.net/thiagolucio/"
                       target="_black"
                       aria-label="Behance"
                     >
                       On my Behance, you can see work I did as a Front-end in the past and Sites I created when I worked as a Web designer.
-                      <img src={Behance.src} className="w-auto h-[300px] mt-3 shadow-lg shadow-black" alt="Behance" />
+                      <img src={Behance.src} className="w-auto h-[300px] mt-3 shadow-lg shadow-black float-right" alt="Behance" />
                     </a>
                   </li>
                 </ul>
