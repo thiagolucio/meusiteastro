@@ -1,4 +1,6 @@
 ---
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "../components/Hero.jsx";
 import { Navbar } from "../components/Navbar.jsx";
@@ -15,19 +17,21 @@ import { ScrollUpButton } from "../components/ScrollUpButton";
 import "../styles/Theme.css";
 import "../styles/Diagonals.css";
 
+changeLanguage("en");
 ---
 <Layout title="Thiago Lucio">
-  <Navbar client:load />
-  <Hero client:load />
-  <Features1 client:load />
-  <Divider />
-  <Features2 client:load />
-  <Projects client:load />
-  <FeaturesDiagonal client:load />
-  <Experience client:load />
-  <Brands client:load />
-  <FAQ client:load />
-  <Footer />
-  <ScrollUpButton client:load />
-</Layout>
- ../components/Experience.jsx
+    <Trans i18nKey="site">
+    <Navbar client:load />
+    <Hero client:load />
+    <Features1 client:load />
+    <Divider />
+    <Features2 client:load />
+    <Projects client:load />
+    <FeaturesDiagonal client:load />
+    <Experience client:load />
+    <Brands client:load />
+    <FAQ client:load />
+    <Footer />
+    <ScrollUpButton client:load />
+  </Trans>
+  </Layout>

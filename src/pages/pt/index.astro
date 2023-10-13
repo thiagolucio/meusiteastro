@@ -1,0 +1,37 @@
+---
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import Layout from "../../layouts/Layout.astro";
+import { Hero } from "../../components/Hero.jsx";
+import { Navbar } from "../../components/Navbar.jsx";
+import { Features1 } from "../../components/Features1.jsx";
+import { Features2 } from "../../components/Features2.jsx";
+import { Projects } from "../../components/Projects.jsx";
+import { FeaturesDiagonal } from "../../components/FeaturesDiagonal.jsx";
+import { Experience } from "../../components/Experience.jsx";
+import { FAQ } from "../../components/FAQ.jsx";
+import { Brands } from "../../components/Brands.jsx";
+import { Divider } from "../../components/Divider";
+import { Footer } from "../../components/Footer.jsx";
+import { ScrollUpButton } from "../../components/ScrollUpButton";
+import "../../styles/Theme.css";
+import "../../styles/Diagonals.css";
+
+changeLanguage("pt");
+---
+<Layout title="Thiago Lucio">
+    <Trans i18nKey="site">
+    <Navbar client:load />
+    <Hero client:load />
+    <Features1 client:load />
+    <Divider />
+    <Features2 client:load />
+    <Projects client:load />
+    <FeaturesDiagonal client:load />
+    <Experience client:load />
+    <Brands client:load />
+    <FAQ client:load />
+    <Footer />
+    <ScrollUpButton client:load />
+  </Trans>
+  </Layout>
