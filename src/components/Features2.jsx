@@ -44,7 +44,7 @@ export const Features2 = () => (
             <p className="mb-12 text-gray-200 leading-loose text-justify">
               I'm a former Web designer (2002) who in mid-2016 began to naturally migrate to front-end development. Little by little I'm evolving in the Development of web and mobile Systems.
               <br />
-              Stacks principais:
+              Main Stacks:
             </p>           
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">

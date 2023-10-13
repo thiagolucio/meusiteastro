@@ -6,25 +6,25 @@ import nscTotal from "../assets/images/nsctotal.jpg";
 const projectsData = [
   {
     projectName: "Sem Parar App",
-    projectTitle: "Web e Mobile",
+    projectTitle: "WebApp and Mobile",
     content:
-      "Trabalho no projeto da Sem Parar como Desenvolvedor Front-end no time de Design System que cria componentes em React Native para os times do App como com StencilJS para os times dos projetos Web (Angular, React, Next, etc) criando a biblioteca de componentes destes projetos.",
+      "I work on the Sem Parar project as a Front-end Developer on the Design System team that creates components in React Native for the App teams and with StencilJS for the Web project teams (Angular, React, Next, etc.) creating the component library of these projects.",
     image: semParar,
     url: "https://www.semparar.com.br/",
   },
   {
     projectName: "My Seat",
-    projectTitle: "WebApp",
+    projectTitle: "Just WebApp",
     content:
-      "Trabalhei no projeto como Desenvolvedor Front-end em todo ciclo de desenvolvimento. Lidando tanto com o Front-end quanto o Back-end. Utilizando Angular no Front-end, em conjunto com PrismaJs, NestJS, PostGreSQL. O projeto entrega um Aplicativo (WebAPP) que permite o gerenciamento de espaços.",
+      "I worked on the project as a Front-end Developer throughout the development cycle. Dealing with both Front-end and Back-end. Using Angular on the front-end, together with PrismaJs, NestJS, and PostgreSQL. The project delivers an Application (WebAPP) that allows the management of work/ personal spaces.",
     image: mySeat,
     url: "https://atos.net/pt-br/brasil-atos/myseat",
   },
   {
     projectName: "NSC Comunicações",
-    projectTitle: "Web e WebAPP",
+    projectTitle: "Web and WebAPP",
     content:
-      "Filial da Rede Globo de Televisão em Santa Catarina trabalhei na NSC Comunicações como Desenvolvedor Front-end UX/ UI. Tive a oportunidade de trabalhar em projetos como G1 de Santa Catarina, NSC Total e outros, lidando com Front-end mas também com o Back-end e DevOps.",
+      "Branch of Rede Globo de Televisão in Santa Catarina worked at NSC Comunicações as a Front-end UX/UI Developer. I had the opportunity to work on projects such as G1 de Santa Catarina, NSC Total, and others, dealing with Front-end but also with Back-end and DevOps.",
     image: nscTotal,
     url: "https://nsccomunicacao.com.br/",
   },
@@ -41,10 +41,10 @@ export const Projects = () => (
         transition={{ duration: 0.4, delay: 0.3 }}
       >
         <div className="custom-block-subtitle text-center mb-6">
-          Projetos que tive o prazer de participar
+          3 Last Projects
         </div>
         <div className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
-          Últimos Projetos
+          Projects
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
@@ -73,12 +73,12 @@ export const Projects = () => (
               <div className="text-sm text-white text-left">
                 {project.content}
               </div>
-              <div className="mt-4 mb-5">
+              <div className="w-full mt-4 mb-5">
                 <a
                   href={project.url}
-                  className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
+                  className="w-60 h-12 rounded-xl text-sm text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customPrimary border-customPrimary transition"
                 >
-                  <i className="fa-solid fa-link mr-1 fa-lg"></i> Conheça o projeto</a>
+                  <i className="fa-solid fa-link mr-1 fa-lg"></i> Get to know the project</a>
               </div>
             </div>
           ))}
@@ -88,7 +88,7 @@ export const Projects = () => (
             href="#FAQ"
             className="text-blue-300 text-center text-lg py-2 px-4 w-full mt-16"
           >
-            Veja mais projetos
+            MORE PROJECTS
             <p>
               <i className="fa-solid fa-circle-arrow-down text-6xl mt-4 cursor-pointer -customDarkBg2 hover:text-customPrimary border-customPrimary transition"></i>
             </p>
