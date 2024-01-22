@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-import Nexxera from "../assets/logos/nexxera.jpg";
-import Pauta from "../assets/logos/pauta.png";
-import Compaq from "../assets/logos/compaq.svg";
-import Primesys from "../assets/logos/primesys.svg";
+import Nexxera from "../../assets/logos/nexxera.jpg";
+import Pauta from "../../assets/logos/pauta.png";
+import Compaq from "../../assets/logos/compaq.svg";
+import Primesys from "../../assets/logos/primesys.svg";
 
 export const Brands = () => (
   <section className="w-screen flex justify-center bg-customDarkBg1 p-16 mx-auto lg:flex-row flex-col lg:pt-24 pb-8 lg:pb-20">
@@ -18,7 +18,7 @@ export const Brands = () => (
           <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
             <div className="flex flex-col">
               <h2 className="mb-2  text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-white">
-                Some Companies
+                Algumas Empresas
               </h2>
               <h2 className="text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-customSecondary">
               I've been to

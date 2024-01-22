@@ -1,52 +1,64 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
-import SysMapLogo from "../assets/images/logoSysmap.png";
-import LogoEstacio from "../assets/images/unesa-logo.jpg";
-import LogoAtos from "../assets/images/logoAtos.jpeg";
-import LogoUnisul from "../assets/images/unisul-logo.jpeg";
-import LogoNsc from "../assets/images/logonsctv.jpeg";
-import LogoUnivali from "../assets/images/univali-logo.jpg";
+import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon";
+import SysMapLogo from "../../assets/images/logoSysmap.png";
+import LogoEstacio from "../../assets/images/unesa-logo.jpg";
+import LogoAtos from "../../assets/images/logoAtos.jpeg";
+import LogoUnisul from "../../assets/images/unisul-logo.jpeg";
+import LogoNsc from "../../assets/images/logonsctv.jpeg";
+import LogoUnivali from "../../assets/images/univali-logo.jpg";
 
-import { Language } from "./Language";
+import { Language } from "../Language";
 
 const sysMapData = [
-  "Agile Methodologies",
-  "UX/UI Analysis",
-  "Figma Prototyping Analysis",
-  "Design to Code Conversion",
-  "Creation of web/mobile UI components",
-  "Using React Native, HTML, SCSS - Styled Components, TypeScript, StencilJS",
-  "Unit testing with Jest",
-  "Storybook and Chromatic",
-  "Plop for component generation",
-  "Azure Environment",
+  "Metodologias Ágeis",
+  "Análise UX/UI",
+  "Prototipação usando Figma",
+  "Conversação de Design para Código",
+  "Criação de Biblioteca de Componentes",
+  "Testes unitários com Jest",
+  "Stack com React Native, HTML, SCSS - Styled Components, TypeScript, StencilJS",
+  "Testes com Jest, StorybookJS e Chromatic. Plop pra automação de geraçao de componentes",
+  "Azure, AWS",
+  "Jira",
 ];
 
 const atosData = [
-  "Agile Methodologies",
-  "UX/UI Analysis",
-  "Figma Prototyping Analysis",
-  "Design to Code Conversion",
+  "Metodologias Ágeis",
+  "Análise UX/UI",
+  "Prototipação usando Figma",
+  "Conversação de Design para Código",
+  "Criação de Biblioteca de Componentes",
+  "Stack com React Native, HTML, SCSS - Styled Components, TypeScript, StencilJS",
   "Frontend Development Full Cycle",
   "Using Angular12, HTML, CSS, Typescript and Angular Material, Bootstrap",
   "PrismaJS, Kubernetes, Docker, PostgreSQL",
   "Semaphore, SonarQube",
-  "Jira and trello",
-  "Azure Environment",
+  "Testes unitários com Jest",
+  "Storybook e Chromatic",
+  "Plop para geracão de Componentes",
+  "Azure e AWS",
+  "Jira"
 ];
 
 const nscData = [
-  "Agile Methodologies",
-  "UX/UI Analysis",
-  "Figma Prototyping Analysis",
-  "Design to Code Conversion",
+  "Metodologias Ágeis",
+  "Análise UX/UI",
+  "Prototipação usando Figma",
+  "Conversação de Design para Código",
+  "Criação de Biblioteca de Componentes",
+  "Stack com React Native, NodeJS, NextJS, Drupal, HTML, SCSS - Styled Components, TypeScript, StencilJS",
   "Frontend Development Full Cycle",
-  "Using ReactJS, NodeJS, NextJS, Drupal, HTML, CSS, Typescript",
+  "Using Angular12, HTML, CSS, Typescript and Angular Material, Bootstrap",
   "GraphQL, NestJS, Kubernetes, Docker, PostgreSQL, Semaphore, Lambda AWS, S3 AWS, EC2 AWS",
-  "Jira and trello",
-  "AWS Environment",
+  "PrismaJS, Kubernetes, Docker, PostgreSQL",
+  "Semaphore, SonarQube",
+  "Testes unitários com Jest",
+  "Storybook e Chromatic",
+  "Plop para geracão de Componentes",
+  "Azure e AWS",
+  "Jira"
 ];
 
 export const Experience = () => {
@@ -70,11 +82,10 @@ export const Experience = () => {
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="custom-block-subtitle">Fast Resume</span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
-                Experience & Education
+                Experiência & Educação
               </h2>
               <p className="mb-6 text-customGrayText">
-                My last 3 professional experiences and my main principal
-                academic backgrounds
+                Minhas 3 últimas experiências profissionais e as 3 principais formações acadêmicas.
               </p>
               <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-[198px] h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -90,10 +101,10 @@ export const Experience = () => {
                       isExperience ? "mr-6 ml-4" : "mr-6 ml-2 text-gray-400"
                     }
                   >
-                    Experience
+                    Experiência
                   </div>
                   <div className={isExperience && "text-gray-400"}>
-                    Education
+                    Educação
                   </div>
                 </div>
               </label>
@@ -103,8 +114,8 @@ export const Experience = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 {isExperience ? (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
-                      Frontend UX/ UI Developer
+                    <h4 className="mb-2 text-sm font-bold font-heading text-white text-center">
+                      Desenvolvedor Front-end
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
@@ -114,19 +125,18 @@ export const Experience = () => {
                         />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
-                        Remote - May/2022 - Now
+                        Remoto - May/2022 - Now
                       </div>
                     </div>
-                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm">
-                      Co-partner working on company client projects together
-                      with the Design System teams, creating the Component
-                      Library for Web applications and Mobile.
+                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm text-justify">
+                      Contrato SCP da SysMap Solutions com sua carteira de clientes atendendo em projetos Mobile de clientes como o App do "Sem Parar" e Fleetcor (EUA).
+                       Trabalhando na construção da Biblioteca de Componentes Mobile e Web para atender projetos e times destes clientes.
                     </p>
                     <ul className="mb-2 2xl:mb-6 text-white">
                       {sysMapData.map((text, index) => (
                         <li className="mb-4 flex" key={`${text}-${index}`}>
                           <CheckArrowIcon />
-                          <span>{text}</span>
+                          <span className="text-xs">{text}</span>
                         </li>
                       ))}
                     </ul>

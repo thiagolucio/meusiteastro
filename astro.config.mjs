@@ -9,5 +9,13 @@ export default defineConfig({
   site: 'https://thiagolucio.com.br',
   compressHTML: false,
   output: 'static',
-  integrations: [react(), tailwind(), sitemap()]
+  integrations: [react(), tailwind(), sitemap()],
+  i18n: {
+    defaultLocale: 'pt-br',
+    locales: ['en', 'pt-br'],
+    routing: {
+      prefixDefaultLocale: false,
+      redirectToDefaultLocale: false,
+    },
+  },
 });
