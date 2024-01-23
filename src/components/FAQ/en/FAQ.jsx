@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import g1Sc from "../assets/images/g1.svg";
-import Nix from "../assets/images/nix.svg";
-import Pauta from "../assets/images/pauta.svg";
-import Risoluto from "../assets/images/risoluto.svg";
+import g1Sc from "../../assets/images/g1.svg";
+import Nix from "../assets/../images/nix.svg";
+import Pauta from "../../assets/images/pauta.svg";
+import Risoluto from "../../assets/images/risoluto.svg";
 
 const FAQData = [
   {

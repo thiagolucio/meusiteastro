@@ -18,8 +18,8 @@ const sysMapData = [
   "Conversação de Design para Código",
   "Criação de Biblioteca de Componentes",
   "Testes unitários com Jest",
-  "Stack com React Native, HTML, SCSS - Styled Components, TypeScript, StencilJS",
-  "Testes com Jest, StorybookJS e Chromatic. Plop pra automação de geraçao de componentes",
+  "React, React Native, StencilJS, SvelteJS, HTML, SCSS - Styled Components, TypeScript",
+  "Jest, StorybookJS e Chromatic. Plop, Git",
   "Azure, AWS",
   "Jira",
 ];
@@ -30,14 +30,8 @@ const atosData = [
   "Prototipação usando Figma",
   "Conversação de Design para Código",
   "Criação de Biblioteca de Componentes",
-  "Stack com React Native, HTML, SCSS - Styled Components, TypeScript, StencilJS",
-  "Frontend Development Full Cycle",
-  "Using Angular12, HTML, CSS, Typescript and Angular Material, Bootstrap",
-  "PrismaJS, Kubernetes, Docker, PostgreSQL",
-  "Semaphore, SonarQube",
-  "Testes unitários com Jest",
-  "Storybook e Chromatic",
-  "Plop para geracão de Componentes",
+  "Angular12, HTML, CSS, Typescript and Angular Material, Bootstrap",
+  "PrismaJS, Kubernetes, Docker, PostgreSQL, Semaphore, SonarQube",
   "Azure e AWS",
   "Jira"
 ];
@@ -48,15 +42,10 @@ const nscData = [
   "Prototipação usando Figma",
   "Conversação de Design para Código",
   "Criação de Biblioteca de Componentes",
-  "Stack com React Native, NodeJS, NextJS, Drupal, HTML, SCSS - Styled Components, TypeScript, StencilJS",
-  "Frontend Development Full Cycle",
-  "Using Angular12, HTML, CSS, Typescript and Angular Material, Bootstrap",
+  "React Native, NodeJS, NextJS, Drupal, HTML, SCSS - Styled Components, TypeScript, StencilJS, Angular12, HTML, CSS, JS/ TS.",
   "GraphQL, NestJS, Kubernetes, Docker, PostgreSQL, Semaphore, Lambda AWS, S3 AWS, EC2 AWS",
   "PrismaJS, Kubernetes, Docker, PostgreSQL",
   "Semaphore, SonarQube",
-  "Testes unitários com Jest",
-  "Storybook e Chromatic",
-  "Plop para geracão de Componentes",
   "Azure e AWS",
   "Jira"
 ];
@@ -87,23 +76,37 @@ export const Experience = () => {
               <p className="mb-6 text-customGrayText">
                 Minhas 3 últimas experiências profissionais e as 3 principais formações acadêmicas.
               </p>
-              <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-[198px] h-12 rounded-lg pr-36 pl-1 cursor-pointer">
+              <label className="mx-auto bg-zinc-700 flex items-center w-[345px] h-16 rounded-lg px-3 cursor-pointer">
                 <input
                   type="checkbox"
                   className="peer appearance-none"
                   checked={!isExperience}
                   onChange={handleChange}
                 />
-                <span className="h-8 w-[7rem] after:w-[35rem] flex items-center bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:h-10  after:bg-customPrimary   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
-                <div className="flex absolute text-white text-sm font-bold">
+                <span className="
+                  w-[148px]
+                  h-[50px]
+                  after:w-[148px]
+                  after:h-[50px]
+                  absolute
+                  flex 
+                  items-center 
+                  after:rounded-lg duration-300 ease-in-out
+                  after:bg-customTransparentBgPrimary
+                  text-white     
+                  after:shadow-md 
+                  after:duration-300 
+                  peer-checked:after:translate-x-[10.9rem] 
+                  cursor-pointer"></span>
+                <div className="flex gap-x-16 text-white absolute">
                   <div
                     className={
-                      isExperience ? "mr-6 ml-4" : "mr-6 ml-2 text-gray-400"
+                      isExperience ? "text-white w-[148px]" : " text-gray-400 w-[148px]"
                     }
                   >
                     Experiência
                   </div>
-                  <div className={isExperience && "text-gray-400"}>
+                  <div className={isExperience ? "text-gray-400" : "text-white"}>
                     Educação
                   </div>
                 </div>
@@ -128,9 +131,9 @@ export const Experience = () => {
                         Remoto - May/2022 - Now
                       </div>
                     </div>
-                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm text-justify">
-                      Contrato SCP da SysMap Solutions com sua carteira de clientes atendendo em projetos Mobile de clientes como o App do "Sem Parar" e Fleetcor (EUA).
-                       Trabalhando na construção da Biblioteca de Componentes Mobile e Web para atender projetos e times destes clientes.
+                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-justify text-xs">
+                      Contrato SCP da SysMap Solutions com sua carteira de clientes atendendo em projetos <b>MOBILE</b> de clientes como o App do "Sem Parar" e Fleetcor (EUA).
+                       Trabalhando na construção da <b>Biblioteca de Componentes Mobile e Web</b> para atender projetos e times destes clientes.
                     </p>
                     <ul className="mb-2 2xl:mb-6 text-white">
                       {sysMapData.map((text, index) => (
@@ -146,13 +149,13 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the project
+                      Conheça o projeto
                     </a>
                   </div>
                 ) : (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
                     <h4 className="mb-2 text-lg font-bold text-white text-center">
-                      System Analisys
+                      Analistas de Sistemas
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
@@ -166,12 +169,10 @@ export const Experience = () => {
                       </div>
                     </div>
                     <h5 className="text-md font-bold text-blue-300 text-center">
-                      Bachelor's Degree
+                      Bacharel
                     </h5>
-                    <p className="text-sm mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-center">
-                      The Systems Analysis and Development course teaches you
-                      how to design, document, specify, test, implement and
-                      maintain computer systems and software.
+                    <p className="text-xs mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose">
+                      Curso de Análise de Sistemas fornecendo um Diploma de Bacharel na profissão
                     </p>
                     <a
                       href="hhttps://estacio.br/"
@@ -179,7 +180,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the Intitution
+                      Conheça a instituição
                     </a>
                   </div>
                 )}
@@ -188,7 +189,7 @@ export const Experience = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 {isExperience ? (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
+                    <h4 className="mb-2 text-sm font-bold font-heading text-white text-center">
                       Frontend UX/ UI Developer
                     </h4>
                     <div className="flex flex-col justify-center items-center">
@@ -203,14 +204,14 @@ export const Experience = () => {
                       </div>
                     </div>
 
-                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm">
-                      Working company's MySeat project among other side
-                      projects. Developing Web and PWA applications for the
-                      project and working throughout the Front/Backend cycle.
+                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-justify text-xs">
+                      Trabalhando principalmente no projeto MySeat. Um produto da própria empresa e é uma aplicação WEBAPP/ PWA. 
+                      Lidando com os Designers na construção das interfaces, otimizando desempenho na implementação do Código
+                      e desenvolvendo com o time de desenvolvimento Front-end.
                     </p>
                     <ul className="mb-2 2xl:mb-6 text-white">
                       {atosData.map((text, index) => (
-                        <li className="mb-4 flex" key={`${text}-${index}`}>
+                        <li className="mb-4 flex text-xs" key={`${text}-${index}`}>
                           <CheckArrowIcon />
                           <span>{text}</span>
                         </li>
@@ -222,13 +223,13 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the project
+                      Conheça o projeto
                     </a>
                   </div>
                 ) : (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
                     <h4 className="mb-2 text-lg font-bold text-white text-center">
-                      Web Development
+                      Desenvolvimento Web
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
@@ -242,14 +243,10 @@ export const Experience = () => {
                       </div>
                     </div>
                     <h5 className="text-md font-bold text-blue-300 text-center">
-                      Bachelor's Degree
+                      Bacharelado
                     </h5>
                     <p className="text-sm mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left">
-                      Prepare the individual to work on creating web pages,
-                      applications and others. The Web Development faculty is
-                      responsible for training professionals capable of
-                      servicing, planning, building, testing, maintaining and
-                      updating web systems.
+                      Preparando o indivíduo na criação de páginas, aplicações e projetos web. 
                     </p>
                     <a
                       href="https://www.unisul.br/"
@@ -257,7 +254,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the Intitution
+                      Conheça a instituição
                     </a>
                   </div>
                 )}
@@ -266,8 +263,8 @@ export const Experience = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 {isExperience ? (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                    <h4 className="mb-2 text-xl font-bold font-heading text-white text-center">
-                      Frontend UX/ UI Developer
+                    <h4 className="mb-2 text-sm font-bold font-heading text-white">
+                      Desenvolvedor Front-end & UX/ UI
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
@@ -277,19 +274,17 @@ export const Experience = () => {
                         />
                       </div>
                       <div className="text-indigo-200 text-center text-sm mt-2">
-                        Hybrid - March/2020 - July/2021
+                        Híbrido - Março/2020 - Julho/2021
                       </div>
                     </div>
 
-                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm">
-                      Branch of Rede Globo Network Television in the State of
-                      Santa Catarina, working mainly on the projects G1 de Santa
-                      Catarina, NSC Total (local newspaper) and Hora de Santa
-                      Catarina in addition to Rádio Atlântida.
+                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-xs">
+                      Filial da Rede Globo do estado de Santa Catarina. Trabalhando principalmente em projetos do Lab da empresa, 
+                      incluíndo G1 de Santa Catarina, NSC TV, NSC Total, Hora de Santa Catarina e Rádio Atlântida.
                     </p>
                     <ul className="mb-2 2xl:mb-6 text-white">
                       {nscData.map((text, index) => (
-                        <li className="mb-4 flex" key={`${text}-${index}`}>
+                        <li className="mb-4 flex text-xs" key={`${text}-${index}`}>
                           <CheckArrowIcon />
                           <span>{text}</span>
                         </li>
@@ -301,13 +296,13 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the project
+                      Conheça o projeto
                     </a>
                   </div>
                 ) : (
                   <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                    <h4 className="mb-2 text-lg font-bold text-white text-center">
-                      Interaction Design UX & UI
+                    <h4 className="mb-2 font-bold text-white text-center text-sm">
+                     Design de Interação UX/UI
                     </h4>
                     <div className="flex flex-col justify-center items-center">
                       <div className="mt-4 mr-2">
@@ -321,12 +316,11 @@ export const Experience = () => {
                       </div>
                     </div>
                     <h5 className="text-md font-bold text-blue-300 text-center">
-                      Postgraduate in Interaction Design
+                      Especialização<br /> ou Pós-graduação
                     </h5>
-                    <p className="text-sm mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left">
-                      Course dedicated to the study and practice of Interaction
-                      and User-Centered Design. UX and UI techniques dedicated
-                      to creating systems and applications are taught.
+                    <p className="text-xs mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left">
+                      Curso é dedicado ao estudo e prática da Interação do Design de usuário, ensinando técnicas dedicada ao UX e UI na criação de interfaces
+                      para sistemas e aplicações.
                     </p>
                     <a
                       href="https://univali.br/pos/lato-sensu/Paginas/default.aspx?curso=design-de-interacao"
@@ -334,7 +328,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the Intitution
+                      Conheça a insituição
                     </a>
                   </div>
                 )}
@@ -345,7 +339,7 @@ export const Experience = () => {
                 className="text-blue-300 text-center text-lg py-2 px-4 w-full mt-16 underline underline-offset-4"
               >
                 <i className="fa-brands fa-linkedin mr-2 fa-lg"></i>
-                See previous professional experiences on my Linkedin
+                Veja todas as minhas experiências profissionais do Linkedin
               </a>
             </div>
           </div>

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import euWebDesigner from "../assets/images/webdesign.jpg";
-import euFrontEnd from "../assets/images/escritorio.png";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import euWebDesigner from "../../../assets/images/webdesign.jpg";
+import euFrontEnd from "../../../assets/images/escritorio.png";
+import { CheckArrowIcon } from "../../../../assets/icons/CheckArrowIcon";
 
 export const Features2 = () => (
   <section className="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">
@@ -33,7 +33,7 @@ export const Features2 = () => (
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
+        <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8 text-sm">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
             <span className="custom-block-subtitle">
               fast resume
@@ -44,7 +44,7 @@ export const Features2 = () => (
             <p className="mb-12 text-gray-200 leading-loose text-justify">
               I'm a former Web designer (2002) who in mid-2016 began to naturally migrate to front-end development. Little by little I'm evolving in the Development of web and mobile Systems.
               <br />
-              Main Stacks:
+              Principais conhecimentos:
             </p>           
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">

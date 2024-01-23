@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-import feature1 from "../assets/images/profit01.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
-import feature4 from "../assets/images/feature4.jpg";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import feature1 from "../../assets/images/profit01.jpg";
+import feature2 from "../../assets/images/feature2.jpg";
+import feature3 from "../../assets/images/feature3.jpg";
+import feature4 from "../../assets/images/feature4.jpg";
+import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon";
 
 export const Features1 = () => {
   return (
@@ -39,7 +39,8 @@ export const Features1 = () => {
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Coding Frontend using Frameworks, Libraries or "hands on".</span>
+                  {/* <span>Coding Frontend using Frameworks, Libraries or "hands on".</span> */}
+                  <span>Codando Front-end usando Frameworks, Bibliotecas ou "na mão".</span>
                 </li>
               </ul>
             </div>

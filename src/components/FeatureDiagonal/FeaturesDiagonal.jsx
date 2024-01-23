@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import { InvitationModal } from "./InvitationModal";
+import { InvitationModal } from "../InvitationModal";
 
 export const FeaturesDiagonal = () => {
   const [isModalOpenEn, setIsModalOpenEn] = useState(false);
@@ -32,10 +32,10 @@ export const FeaturesDiagonal = () => {
         <div className="w-screen  flex flex-col lg:flex-row justify-center mx-auto p-16 bg-customDarkBg1">
           <div className="flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
-              Profesional Video Pitch
+              Vídeo de apresentação (em Inglês)
             </span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Some about myself
+              Um pouco sobre mim
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
                 Professional Pitch in video where I briefly introduce myself. You can also check my English as the presentation is in English.

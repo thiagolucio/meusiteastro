@@ -73,26 +73,39 @@ export const Experience = () => {
                 Experience & Education
               </h2>
               <p className="mb-6 text-customGrayText">
-                My last 3 professional experiences and my main principal
-                academic backgrounds
+                My last 3 professional experiences and my main principal academic backgrounds
               </p>
-              <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-[198px] h-12 rounded-lg pr-36 pl-1 cursor-pointer">
+              <label className="mx-auto bg-zinc-700 flex items-center w-[345px] h-16 rounded-lg px-3 cursor-pointer">
                 <input
                   type="checkbox"
                   className="peer appearance-none"
                   checked={!isExperience}
                   onChange={handleChange}
                 />
-                <span className="h-8 w-[7rem] after:w-[35rem] flex items-center bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:h-10  after:bg-customPrimary   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
-                <div className="flex absolute text-white text-sm font-bold">
+                <span className="
+                  w-[148px]
+                  h-[50px]
+                  after:w-[148px]
+                  after:h-[50px]
+                  absolute
+                  flex 
+                  items-center 
+                  after:rounded-lg duration-300 ease-in-out
+                  after:bg-customTransparentBgPrimary
+                  text-white     
+                  after:shadow-md 
+                  after:duration-300 
+                  peer-checked:after:translate-x-[10.9rem] 
+                  cursor-pointer"></span>
+                <div className="flex gap-x-16 text-white absolute">
                   <div
                     className={
-                      isExperience ? "mr-6 ml-4" : "mr-6 ml-2 text-gray-400"
+                      isExperience ? "text-white w-[148px]" : " text-gray-400 w-[148px]"
                     }
                   >
                     Experience
                   </div>
-                  <div className={isExperience && "text-gray-400"}>
+                  <div className={isExperience ? "text-gray-400" : "text-white"}>
                     Education
                   </div>
                 </div>
@@ -118,7 +131,7 @@ export const Experience = () => {
                       </div>
                     </div>
                     <p className="mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left text-sm">
-                    SysMap Solutions SCP contract with its client portfolio serving on Mobile projects for clients such as the "Sem Parar" App and Fleetcor (USA).
+                    SysMap Solutions Short-Term Contract with its client portfolio serving on Mobile projects for clients such as the "Sem Parar" App and Fleetcor (USA).
                     Working on building the Mobile and Web Component Library to serve these clients' projects and teams.
                     </p>
                     <ul className="mb-2 2xl:mb-6 text-white">
@@ -135,7 +148,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the project
+                      Know Project
                     </a>
                   </div>
                 ) : (
@@ -168,7 +181,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the Intitution
+                      Know Intitution
                     </a>
                   </div>
                 )}
@@ -211,7 +224,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the project
+                      Know Project
                     </a>
                   </div>
                 ) : (
@@ -246,7 +259,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the Intitution
+                      Know Intitution
                     </a>
                   </div>
                 )}
@@ -290,7 +303,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the project
+                      Know Project
                     </a>
                   </div>
                 ) : (
@@ -310,7 +323,7 @@ export const Experience = () => {
                       </div>
                     </div>
                     <h5 className="text-md font-bold text-blue-300 text-center">
-                      Postgraduate in Interaction Design
+                      Master's Degree/ Especialization in Interaction Design UX/ UI
                     </h5>
                     <p className="text-sm mt-4 mb-6 2xl:mb-10 text-gray-200 leading-loose text-left">
                       Course dedicated to the study and practice of Interaction
@@ -323,7 +336,7 @@ export const Experience = () => {
                       className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                     >
                       <i className="fa-solid fa-arrow-up-right-from-square mr-2"></i>{" "}
-                      Get to know the Intitution
+                      Know Intitution
                     </a>
                   </div>
                 )}
@@ -334,7 +347,7 @@ export const Experience = () => {
                 className="text-blue-300 text-center text-lg py-2 px-4 w-full mt-16 underline underline-offset-4"
               >
                 <i className="fa-brands fa-linkedin mr-2 fa-lg"></i>
-                See previous professional experiences on my Linkedin
+                See all professional experiences on my Linkedin
               </a>
             </div>
           </div>
