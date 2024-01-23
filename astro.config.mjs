@@ -11,11 +11,10 @@ export default defineConfig({
   output: 'static',
   integrations: [react(), tailwind(), sitemap()],
   i18n: {
-    defaultLocale: 'pt-br',
-    locales: ['en', 'pt-br'],
+    defaultLocale: '',
+    locales: ['en'],
     routing: {
-      prefixDefaultLocale: false,
-      redirectToDefaultLocale: false,
+      prefixDefaultLocale: true
     },
   },
 });

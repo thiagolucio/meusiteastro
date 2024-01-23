@@ -9,7 +9,7 @@ import LogoUnisul from "../../assets/images/unisul-logo.jpeg";
 import LogoNsc from "../../assets/images/logonsctv.jpeg";
 import LogoUnivali from "../../assets/images/univali-logo.jpg";
 
-import { Language } from "../Language";
+// import { Language } from "../../Language";
 
 const sysMapData = [
   "Metodologias Ágeis",
@@ -69,7 +69,7 @@ export const Experience = () => {
         >
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-16">
-              <span className="custom-block-subtitle">Fast Resume</span>
+              <span className="custom-block-subtitle">RESUMO RÁPIDO </span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
                 Experiência & Educação
               </h2>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import euWebDesigner from "../../../assets/images/webdesign.jpg";
 import euFrontEnd from "../../../assets/images/escritorio.png";
-import { CheckArrowIcon } from "../../../../assets/icons/CheckArrowIcon";
+import { CheckArrowIcon } from "../../../assets/icons/CheckArrowIcon";
 
 export const Features2 = () => (
   <section className="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">

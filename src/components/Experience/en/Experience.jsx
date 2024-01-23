@@ -2,14 +2,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { CheckArrowIcon } from "../../../assets/icons/CheckArrowIcon";
-import SysMapLogo from "../../assets/images/logoSysmap.png";
-import LogoEstacio from "../../assets/images/unesa-logo.jpg";
-import LogoAtos from "../../assets/images/logoAtos.jpeg";
-import LogoUnisul from "../../assets/images/unisul-logo.jpeg";
-import LogoNsc from "../../assets/images/logonsctv.jpeg";
-import LogoUnivali from "../../assets/images/univali-logo.jpg";
+import SysMapLogo from "../../../assets/images/logoSysmap.png";
+import LogoEstacio from "../../../assets/images/unesa-logo.jpg";
+import LogoAtos from "../../../assets/images/logoAtos.jpeg";
+import LogoUnisul from "../../../assets/images/unisul-logo.jpeg";
+import LogoNsc from "../../../assets/images/logonsctv.jpeg";
+import LogoUnivali from "../../../assets/images/univali-logo.jpg";
 
-import { Language } from "../../Language";
+// import { Language } from "../../Language";
 
 const sysMapData = [
   "Agile Methodologies",

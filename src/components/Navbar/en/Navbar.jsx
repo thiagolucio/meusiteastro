@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-// import Logo from "../assets/logos/logo.png";
+// import Logo from "../../../assets/logos/logo.png";
 // import { Language } from "./Language";
 
 const navbarLinks = [

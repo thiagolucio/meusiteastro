@@ -1,5 +1,5 @@
-import Logo from "../assets/logos/logo.png";
-import Behance from "../assets/images/behance.svg";
+import Logo from "../../../assets/logos/logo.png";
+import Behance from "../../../assets/images/behance.svg";
 
 export const Footer = () => {
   return (

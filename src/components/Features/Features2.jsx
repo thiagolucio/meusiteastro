@@ -36,10 +36,10 @@ export const Features2 = () => (
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8 text-sm">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
             <span className="custom-block-subtitle">
-              fast resume
+              Resumo Rápido
             </span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Old Web designer to<span className="text-customPrimary"> Front-end</span>
+              De Webdesigner para<span className="text-customPrimary"> Front-end</span>
             </h2>
             <p className="mb-12 text-gray-200 leading-loose text-justify">
               Sou um Webdesigner que começou em 2002 a trabalhar desenvolvendo Sites e Portais, posteriormente criando interfaces com HTML, CSS, JQuery nas aplicações Web da época 

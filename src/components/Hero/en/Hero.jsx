@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { InvitationModal } from "./InvitationModal";
-import HeroImage from "../assets/images/hero-img.jpg";
+import { InvitationModal } from "../../InvitationModal";
+import HeroImage from "../../../assets/images/hero-img.jpg";
 
 export const Hero = () => {
   const [isModalOpenEn, setIsModalOpenEn] = useState(false);

@@ -38,7 +38,7 @@ export const FeaturesDiagonal = () => {
               Um pouco sobre mim
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
-                Professional Pitch in video where I briefly introduce myself. You can also check my English as the presentation is in English.
+                Pitch de apresentação em vídeo(em Inglês).
             </p>
               <div className="w-full flex flex-col gap-2 sm:flex-row justify-start">
                 <div
