@@ -1,0 +1,127 @@
+#
+# Your Crowdin credentials
+#
+"project_id": "01"
+"api_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ3UUVxdmhVM3ZMT2EyWGljbVV5VCIsImp0aSI6IjUyMTJiNTFkMjE3NDYwOGFmYTBjYzQzMWNjN2Q2NGQyYTFkYzg1NTgzZTA0NzMyZmU2M2Y2NTdiMjBkM2M3NGM2ZDRjMTAzMGY2YzIzMzNlIiwiaWF0IjoxNzA2MDQ3NTQ2LjAwNTU5NiwibmJmIjoxNzA2MDQ3NTQ2LjAwNTYsImV4cCI6MTczNzU4MzU0NS45MzY0MjcsInN1YiI6IjE2MjAxNTMwIiwic2NvcGVzIjpbInByb2plY3QiXSwiZG9tYWluIjpudWxsLCJhc3NvY2lhdGlvbnMiOlsiKiJdLCJzZXNzaW9uIjowfQ.nvFaUtMZZygSt01GkfRobbWIAI310YYpZTQm5ucMEqyislFWUBfgxuX_00yoYTp6eIXCgn5GMupSiYWtEm6G7PXkAtLWzSV_wdW10kVwgUSZP1qW7MOqZjxt2_UJsyixOry57ayr1-tALyRUHFOP8u_6zHubeeDVfntzZXUkOovleie-tiRqlVCTgHkLSML6Ltv0n-3-XbLnykBfBeG8z9l5jFaph4f3iP43CNXyI_7W8oua5bofKzbWGNQT3kEWCNJrb1Hmp1z8arDE7N1TZtRzp3O3XZL7zJPs-HYelcWyCBX_3McfKWFxLM1m9U_ednHJH4C61uieRLFnKKkrlgAxQ1aWCZIRK4bmhQW-URjuAOM6gAAU4XS33lwpyqi0OjkE9B7rxd3aPTydltTsranba6drfX9YBMGcYE9SQbqy3ev4dj9KspUBLwaE7j11CKjasDgcvHdRE0XYq7SNKF3FcHHM5WgCDfjSQ_LT8EOPyT58S00bRys43O4siBB_nQvC9zNhPz9bAAODCYW77HQFgfuO0-UKg7Jje53yTJGoO3U7uCNqw9S4VBF9ulVK9qByH9Vhh3FF4cUUeWjIkwS8j3dBT_Maz4GXbwyYj5n0H535m_mxpp80e0zmU8dEe2-zQwrWnD8Q-LosjSA7nTwsfidV6RJlIScoUrABB6g"
+"base_path": "."
+"base_url": "https://api.crowdin.com"
+
+#
+# Choose file structure in Crowdin
+# e.g. true or false
+#
+"preserve_hierarchy": true
+
+#
+# Files configuration
+#
+files: [
+  {
+    #
+    # Source files filter
+    # e.g. "/resources/en/*.json"
+    #
+    "source": "/public/locales/en/translation.json", # Source language file pattern
+
+    #
+    # Where translations will be placed
+    # e.g. "/resources/%two_letters_code%/%original_file_name%"
+    #
+    "translation": "/public/locales/%two_letters_code%/translation.json" 
+
+    #
+    # Files or directories for ignore
+    # e.g. ["/**/?.txt", "/**/[0-9].txt", "/**/*\?*.txt"]
+    #
+    # "ignore": [],
+
+    #
+    # The dest allows you to specify a file name in Crowdin
+    # e.g. "/messages.json"
+    #
+    # "dest": "",
+
+    #
+    # File type
+    # e.g. "json"
+    #
+    # "type": "",
+
+    #
+    # The parameter "update_option" is optional. If it is not set, after the files update the translations for changed strings will be removed. Use to fix typos and for minor changes in the source strings
+    # e.g. "update_as_unapproved" or "update_without_changes"
+    #
+    # "update_option": "",
+
+    #
+    # Start block (for XML only)
+    #
+
+    #
+    # Defines whether to translate tags attributes.
+    # e.g. 0 or 1  (Default is 1)
+    #
+    # "translate_attributes": 1,
+
+    #
+    # Defines whether to translate texts placed inside the tags.
+    # e.g. 0 or 1 (Default is 1)
+    #
+    # "translate_content": 1,
+
+    #
+    # This is an array of strings, where each item is the XPaths to DOM element that should be imported
+    # e.g. ["/content/text", "/content/text[@value]"]
+    #
+    # "translatable_elements": [],
+
+    #
+    # Defines whether to split long texts into smaller text segments
+    # e.g. 0 or 1 (Default is 1)
+    #
+    # "content_segmentation": 1,
+
+    #
+    # End block (for XML only)
+    #
+
+    #
+    # Start .properties block
+    #
+
+    #
+    # Defines whether single quote should be escaped by another single quote or backslash in exported translations
+    # e.g. 0 or 1 or 2 or 3 (Default is 3)
+    # 0 - do not escape single quote;
+    # 1 - escape single quote by another single quote;
+    # 2 - escape single quote by backslash;
+    # 3 - escape single quote by another single quote only in strings containing variables ( {0} ).
+    #
+    # "escape_quotes": 3,
+
+    #
+    # Defines whether any special characters (=, :, ! and #) should be escaped by backslash in exported translations.
+    # e.g. 0 or 1 (Default is 0)
+    # 0 - do not escape special characters
+    # 1 - escape special characters by a backslash
+    #
+    # "escape_special_characters": 0
+    #
+
+    #
+    # End .properties block
+    #
+
+    #
+    # Does the first line contain header?
+    # e.g. true or false
+    #
+    # "first_line_contains_header": true,
+
+    #
+    # for spreadsheets
+    # e.g. "identifier,source_phrase,context,uk,ru,fr"
+    #
+    # "scheme": "",
+  }
+]
